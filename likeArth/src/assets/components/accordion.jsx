@@ -1,0 +1,22 @@
+import { useState } from "react"
+
+
+export default function Accordion({title, isi, delay}){
+    const [accordionOpen, setAccordionOpen]  = useState(false);
+
+    return(
+        <>
+            <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={delay} onClick={() => setAccordionOpen(!accordionOpen)} className="bg-white cursor-pointer relative z-20 ">
+                {/* Button accordion */}
+                <div  className="flex justify-between w-full px-6 py-4 bg-transparent">
+                    <span className="font-bold text-black">{title}</span>
+                    <i className={`bi bi-chevron-up text-[#0d5cd3] text-center text-[14px] pt-[2px] transition-all duration-500 ease-in-out ${accordionOpen ? "rotate-[-180deg]" : "rotate-[0deg]"}`}></i>
+                </div>
+                {/* isi accordion */}
+                <div className={`bg-transparent grid overflow-hidden transition-all duration-500 ease-in-out text-slate-600 text-sm ${accordionOpen ? "grid-rows-[1fr] opacity-100 pl-6 pr-20 py-4" : "grid-rows-[0fr] opacity-0 pl-6 pr-20 py-0"}`}>
+                    <div className={`text-[#737373] overflow-hidden transition-all duration-500 delay-300 ease-in-out ${accordionOpen ? "opacity-100" : "opacity-0"}`}>{isi}</div>
+                </div>
+            </div>
+        </>
+    )
+}
