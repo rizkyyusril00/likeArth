@@ -1,6 +1,6 @@
 import Nav from "./assets/components/nav"
 import Hero from "./assets/components/hero"
-import Portfolio from "./assets/components/portfolio"
+// import Portfolio from "./assets/components/portfolio"
 import WhyUs from "./assets/components/whyUs"
 import OurService from "./assets/components/ourService"
 import HowItWorks from "./assets/components/howItWorks"
@@ -15,7 +15,7 @@ function App() {
     <>
       <Nav />
       <Hero />
-      <Portfolio />
+      {/* <Portfolio /> */}
       <WhyUs />
       <OurService />
       <HowItWorks />

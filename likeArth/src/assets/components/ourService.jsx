@@ -43,121 +43,123 @@ export default function OurService(){
     ];
     return(
         <>
-            <div className="our-service bg-[#f0f9fa]">
-                <div className='flex flex-col gap-0'>
-                    {/* atas */}
-                    <div className="our-service-box px-[10rem] pt-[5rem] flex justify-between gap-[2.5rem]">
-                        {/* box1 */}
-                        <div className="flex flex-col justify-start items-start w-[50%]">
-                            {/* bagain atas */}
-                            <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" className="flex justify-start items-center">
-                                {/* img */}
-                                <figure className=''>
-                                    <img src={Service1} alt="" className='w-full h-full object-cover' />
-                                </figure>
-                                {/* description */}
-                                <div className="flex flex-col items-start justify-start gap-[0.5rem] text-secondary">
-                                    <p className='text-[0.875rem]'>OUR SERVICES</p>
-                                    <p className='font-bold text-[2rem]'>UX Design</p>
-                                    <p className='text-[1rem]'>We ensure your design is intuitive, easy to use, and provides a delightful experience. </p>
+            <div className="our-service bg-[#f0f9fa] px-[24px]">
+                <div className='container mx-auto max-w-[1120px]'>
+                    <div className='flex flex-col gap-[2.5rem] xl:gap-0'>
+                        {/* atas */}
+                        <div className="our-service-box pt-[5rem] flex flex-col xl:grid-flow-row justify-between gap-[2.5rem]">
+                            {/* box1 */}
+                            <div className="flex flex-col justify-start items-start w-full xl:w-[50%]">
+                                {/* bagain atas */}
+                                <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" className="flex justify-start items-center gap-[1.5rem]">
+                                    {/* img */}
+                                    <figure className='w-[40%] h-auto md:w-[167px] md:h-[120px]'>
+                                        <img src={Service1} alt="" className='w-full h-full object-cover place-content-center' />
+                                    </figure>
+                                    {/* description */}
+                                    <div className="flex flex-col items-start justify-start gap-[0.2rem] xl:gap-[0.5rem] text-secondary w-[60%] md:w-auto">
+                                        <p className='text-[1rem] xl:text-[0.875rem]'>OUR SERVICES</p>
+                                        <p className='font-bold text-[1.5rem] md:text-[2rem]'>UX Design</p>
+                                        <p className='text-[1.1rem] xl:text-[1rem] leading-[28px]'>We ensure your design is intuitive, easy to use, and provides a delightful experience. </p>
+                                    </div>
+                                </div>
+                                {/* bagian bawah */}
+                                <div className='flex justify-start items-center flex-wrap gap-[0.75rem] mt-[1.5rem]'>
+                                    {first_services.map(first_service =>(
+                                        <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={first_service.delay} key={first_service.id} className='bg-white border border-[#E8E8E8] py-[0.75rem] px-[1rem] rounded-[0.75rem] gap-[1.5rem]'>
+                                            <span className='text-[#494949] text-[1rem] xl:text-[0.875rem]'>{first_service.name}</span>
+                                        </div>
+                                    ))}
                                 </div>
                             </div>
-                            {/* bagian bawah */}
-                            <div className='flex justify-start items-center flex-wrap gap-[0.75rem] mt-[1.5rem]'>
-                                {first_services.map(first_service =>(
-                                    <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={first_service.delay} key={first_service.id} className='bg-white border border-[#E8E8E8] py-[0.75rem] px-[1rem] rounded-[0.75rem]'>
-                                        <span className='text-[#494949] text-[0.875rem]'>{first_service.name}h</span>
+                            {/* box2 */}
+                            <div className="flex flex-col justify-start items-start w-full xl:w-[50%]">
+                                {/* bagain atas */}
+                                <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="200" className="flex justify-start items-center gap-[1.5rem]">
+                                    {/* img */}
+                                    <figure className='w-[40%] h-auto md:w-[167px] md:h-[120px]'>
+                                        <img src={Service2} alt="" className='w-full h-full object-cover' />
+                                    </figure>
+                                    {/* description */}
+                                    <div className="flex flex-col items-start justify-start gap-[0.5rem] text-secondary w-[60%] md:w-auto">
+                                        <p className='text-[1rem] xl:text-[0.875rem]'>OUR SERVICES</p>
+                                        <p className='font-bold text-[1.5rem] md:text-[2rem]'>UI Design</p>
+                                        <p className='text-[1.1rem] xl:text-[1rem] leading-[28px]'>We craft captivating designs that catch your users' attention.</p>
                                     </div>
-                                ))}
-                            </div>
-                        </div>
-                        {/* box2 */}
-                        <div className="flex flex-col justify-start items-start w-[50%]">
-                            {/* bagain atas */}
-                            <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="200" className="flex justify-start items-center">
-                                {/* img */}
-                                <figure className=''>
-                                    <img src={Service2} alt="" className='w-full h-full object-cover' />
-                                </figure>
-                                {/* description */}
-                                <div className="flex flex-col items-start justify-start gap-[0.5rem] text-secondary">
-                                    <p className='text-[0.875rem]'>OUR SERVICES</p>
-                                    <p className='font-bold text-[2rem]'>UI Design</p>
-                                    <p className='text-[1rem]'>We craft captivating designs that catch your users' attention.</p>
+                                </div>
+                                {/* bagian bawah */}
+                                <div className='flex justify-start items-center flex-wrap gap-[0.75rem] mt-[1.5rem]'>
+                                    {second_services.map(second_service =>(
+                                        <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={second_service.delay} key={second_service.id} className='bg-white border border-[#E8E8E8] py-[0.75rem] px-[1rem] rounded-[0.75rem]'>
+                                            <span className='text-[#494949] text-[1rem] xl:text-[0.875rem]'>{second_service.name}</span>
+                                        </div>
+                                    ))}
                                 </div>
                             </div>
-                            {/* bagian bawah */}
-                            <div className='flex justify-start items-center flex-wrap gap-[0.75rem] mt-[1.5rem]'>
-                                {second_services.map(second_service =>(
-                                    <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={second_service.delay} key={second_service.id} className='bg-white border border-[#E8E8E8] py-[0.75rem] px-[1rem] rounded-[0.75rem]'>
-                                        <span className='text-[#494949] text-[0.875rem]'>{second_service.name}h</span>
-                                    </div>
-                                ))}
-                            </div>
                         </div>
-                    </div>
-                    {/* bawah */}
-                    <div className="our-service-box px-[10rem] pt-[3.75rem] flex justify-between gap-[2.5rem]">
-                        {/* box1 */}
-                        <div className="flex flex-col justify-start items-start w-[50%]">
-                            {/* bagain atas */}
-                            <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="300" className="flex justify-start items-center">
-                                {/* img */}
-                                <figure className=''>
-                                    <img src={Service3} alt="" className='w-full h-full object-cover' />
-                                </figure>
-                                {/* description */}
-                                <div className="flex flex-col items-start justify-start gap-[0.5rem] text-secondary">
-                                    <p className='text-[0.875rem]'>OUR SERVICES</p>
-                                    <p className='font-bold text-[2rem]'>Illustration Design</p>
-                                    <p className='text-[1rem]'>Let us turn your imagination into captivating illustrations.</p>
+                        {/* bawah */}
+                        <div className="our-service-box pt-0 xl:pt-[5rem] flex flex-col xl:grid-flow-row justify-between gap-[2.5rem]">
+                            {/* box1 */}
+                            <div className="flex flex-col justify-start items-start w-full xl:w-[50%]">
+                                {/* bagain atas */}
+                                <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="300" className="flex justify-start items-center gap-[1.5rem]">
+                                    {/* img */}
+                                    <figure className='w-[40%] h-auto md:w-[167px] md:h-[120px]'>
+                                        <img src={Service3} alt="" className='w-full h-full object-cover' />
+                                    </figure>
+                                    {/* description */}
+                                    <div className="flex flex-col items-start justify-start gap-[0.5rem] text-secondary w-[60%] md:w-auto">
+                                        <p className='text-[1rem] xl:text-[0.875rem]'>OUR SERVICES</p>
+                                        <p className='font-bold text-[1.5rem] md:text-[2rem]'>Illustration Design</p>
+                                        <p className='text-[1.1rem] xl:text-[1rem] leading-[28px]'>Let us turn your imagination into captivating illustrations.</p>
+                                    </div>
+                                </div>
+                                {/* bagian bawah */}
+                                <div className='flex justify-start items-center flex-wrap gap-[0.75rem] mt-[1.5rem]'>
+                                    {third_services.map(third_service =>(
+                                        <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={third_service.delay} key={third_service.id} className='bg-white border border-[#E8E8E8] py-[0.75rem] px-[1rem] rounded-[0.75rem]'>
+                                            <span className='text-[#494949] text-[1rem] xl:text-[0.875rem]'>{third_service.name}</span>
+                                        </div>
+                                    ))}
                                 </div>
                             </div>
-                            {/* bagian bawah */}
-                            <div className='flex justify-start items-center flex-wrap gap-[0.75rem] mt-[1.5rem]'>
-                                {third_services.map(third_service =>(
-                                    <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={third_service.delay} key={third_service.id} className='bg-white border border-[#E8E8E8] py-[0.75rem] px-[1rem] rounded-[0.75rem]'>
-                                        <span className='text-[#494949] text-[0.875rem]'>{third_service.name}h</span>
+                            {/* box2 */}
+                            <div className="flex flex-col justify-start items-start w-full xl:w-[50%]">
+                                {/* bagain atas */}
+                                <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="400" className="flex justify-start items-center gap-[1.5rem]">
+                                    {/* img */}
+                                    <figure className='w-[40%] h-auto md:w-[167px] md:h-[120px]'>
+                                        <img src={Service4} alt="" className='w-full h-full object-cover' />
+                                    </figure>
+                                    {/* description */}
+                                    <div className="flex flex-col items-start justify-start gap-[0.5rem] text-secondary w-[60%] md:w-auto">
+                                        <p className='text-[1rem] xl:text-[0.875rem]'>OUR SERVICES</p>
+                                        <p className='font-bold text-[1.5rem] md:text-[2rem]'>Branding & Graphic Design</p>
+                                        <p className='text-[1.1rem] xl:text-[1rem] leading-[28px]'>Make your brand more professional and memorable.</p>
                                     </div>
-                                ))}
-                            </div>
-                        </div>
-                        {/* box2 */}
-                        <div className="flex flex-col justify-start items-start w-[50%]">
-                            {/* bagain atas */}
-                            <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="400" className="flex justify-start items-center">
-                                {/* img */}
-                                <figure className=''>
-                                    <img src={Service4} alt="" className='w-full h-full object-cover' />
-                                </figure>
-                                {/* description */}
-                                <div className="flex flex-col items-start justify-start gap-[0.5rem] text-secondary">
-                                    <p className='text-[0.875rem]'>OUR SERVICES</p>
-                                    <p className='font-bold text-[2rem]'>Branding & Graphic Design</p>
-                                    <p className='text-[1rem]'>Make your brand more professional and memorable.</p>
+                                </div>
+                                {/* bagian bawah */}
+                                <div className='flex justify-start items-center flex-wrap gap-[0.75rem] mt-[1.5rem]'>
+                                    {fourth_services.map(fourth_service =>(
+                                        <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={fourth_service.delay} key={fourth_service.id} className='bg-white border border-[#E8E8E8] py-[0.75rem] px-[1rem] rounded-[0.75rem]'>
+                                            <span className='text-[#494949] text-[1rem] xl:text-[0.875rem]'>{fourth_service.name}</span>
+                                        </div>
+                                    ))}
                                 </div>
                             </div>
-                            {/* bagian bawah */}
-                            <div className='flex justify-start items-center flex-wrap gap-[0.75rem] mt-[1.5rem]'>
-                                {fourth_services.map(fourth_service =>(
-                                    <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={fourth_service.delay} key={fourth_service.id} className='bg-white border border-[#E8E8E8] py-[0.75rem] px-[1rem] rounded-[0.75rem]'>
-                                        <span className='text-[#494949] text-[0.875rem]'>{fourth_service.name}</span>
-                                    </div>
-                                ))}
-                            </div>
                         </div>
-                    </div>
-                    {/* call us */}
-                    <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="500" className='px-[10rem] mt-[3.75rem] mb-[5rem]'>
-                        <div className='flex bg-white px-[2rem] py-[1.5rem] border border-primary rounded-[1.5rem]'>
-                            {/* kiri */}
-                            <div className='w-[70%] flex flex-col items-start justify-start gap-[0.5rem]'>
-                                <h2 className='text-[1.5rem] font-bold text-secondary'>Can't find what you're looking for?</h2>
-                                <p className='text-[1.125rem] text-[#676767]'>We haven’t listed everything here. Let us know what you need, and we’ll deliver the best services tailored just for you.</p>
-                            </div>
-                            {/* kanan */}
-                            <div className='w-[30%] flex items-center justify-center'>
-                                <Btn title="Call Us Now" style="flex justify-center items-center bg-white border border-primary px-[1.5rem] py-[0.719rem] rounded-[0.75rem] relative overflow-hidden"/>
+                        {/* call us */}
+                        <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="500" className='mt-[3.75rem] mb-[5rem]'>
+                            <div className='flex flex-col bg-transparent md:bg-white px-[2rem] py-[1.5rem] border border-primary rounded-[1.5rem] gap-[1rem] xl:gap-[2.5rem]'>
+                                {/* kiri */}
+                                <div className='w-full xl:w-[75%] flex flex-col items-start justify-start gap-[0.5rem]'>
+                                    <h2 className='text-[1.5rem] md:text-[2rem] font-bold text-secondary'>Can't find what you're looking for?</h2>
+                                    <p className='text-[1.125rem] text-[#676767]'>We haven’t listed everything here. Let us know what you need, and we’ll deliver the best services tailored just for you.</p>
+                                </div>
+                                {/* kanan */}
+                                <div className='w-[70%] md:w-[40%] xl:w-[25%] flex justify-end items-center'>
+                                    <Btn title="Call Us Now" style="flex justify-center items-center bg-white border border-primary px-[3.75rem] py-[1rem] rounded-[0.75rem] relative overflow-hidden w-full font-bold"/>
+                                </div>
                             </div>
                         </div>
                     </div>
