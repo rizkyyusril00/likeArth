@@ -38,7 +38,7 @@ export default function Nav(){
                         </button >
                     </div>
                     {/* menu mobile */}
-                    <div className={`w-full p-3 bg-white absolute z-0 rounded-b-2xl transition-all ease-in duration-500 ${openMenu ? 'top-[80px] opacity-100' : '-top-[350px] opacity-0'}`}>
+                    <div className={`w-full p-5 bg-white absolute z-0 rounded-b-2xl transition-all ease-in duration-500 ${openMenu ? 'top-[65px] opacity-100' : '-top-[350px] opacity-0'}`}>
                         <ul className="flex flex-col items-center justify-center gap-[1.5rem]">
                             {menus.map(menu => (
                                 <li key={menu.id}><a href="http://" className='text-primary text-[1.2rem] md:text-[2rem] font-semibold'>{menu.name}</a></li>
