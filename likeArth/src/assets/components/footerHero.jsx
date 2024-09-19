@@ -39,7 +39,7 @@ export default function FooterHero(){
                                 <p className='py-[0.719rem] leading-[28px] text-[0.7rem] md:text-[1.1rem]'><span className="text-primary">1 Slot available !</span> <span className='hidden md:inline-block'>Let's talk</span> <span className='hidden xl:inline-block'>to get your project started.</span></p>
                             </div>
                             {/* btn */}
-                            <Btn title="Contact Us Today" style="flex justify-center items-center relative bg-white text-primary border border-primary overflow-hidden rounded-[0.938rem] py-[0.719rem] px-[1.5rem]"/>
+                            <Btn title="Contact Us Today" style="flex justify-center items-center relative bg-primary text-white border border-primary overflow-hidden rounded-[0.938rem] py-[0.719rem] px-[1.5rem]"/>
                         </div>
                     </div>
                 </div>

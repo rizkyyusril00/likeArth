@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+    font-family: 'Rubik', sans-serif;
+}
 
 .hero{
     height: 100vh;

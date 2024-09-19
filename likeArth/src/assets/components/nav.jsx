@@ -29,10 +29,10 @@ export default function Nav(){
                             ))}
                         </ul>
                         {/* kontak */}
-                        <Btn title="Contact Us Today" style="hidden xl:flex justify-center items-center bg-white border border-primary px-[1.5rem] py-[0.719rem] rounded-[0.75rem] relative overflow-hidden"/>
+                        <Btn title="Contact Us Today" style="hidden xl:flex justify-center items-center bg-primary border border-primary px-[1.5rem] py-[0.719rem] rounded-[0.75rem] relative overflow-hidden"/>
                         {/* hamburger menu */}
                         <button onClick={() => setOpenMenu(!openMenu)} className='xl:hidden flex flex-col justify-between items-center w-[30px] md:w-[40px] h-[20px] md:h-[30px] gap-[2px] mt-1'>
-                            <span className={`w-full h-[4px] bg-primary transition-all ease-in-out duration-500 delay-150 ${openMenu ? 'rotate-45 translate-y-1 md:rotate-45 md:translate-y-2.5' : 'rotate-0 translate-y-0'}`}></span>
+                            <span className={`w-full h-[2px] bg-primary transition-all ease-in-out duration-500 delay-150 ${openMenu ? 'rotate-45 translate-y-1 md:rotate-45 md:translate-y-2.5' : 'rotate-0 translate-y-0'}`}></span>
                             <span className={`w-full h-[4px] bg-primary transition-all ease-in-out duration-500 ${openMenu ? 'opacity-0' : 'opacity-100 delay-150'}`}></span>
                             <span className={`w-full h-[4px] bg-primary transition-all ease-in-out duration-500 delay-150 ${openMenu ? '-rotate-45 -translate-y-3' : 'rotate-0 translate-y-0'}`}></span>
                         </button >
@@ -41,7 +41,7 @@ export default function Nav(){
                     <div className={`w-full p-5 bg-white absolute z-0 rounded-b-2xl transition-all ease-in duration-500 ${openMenu ? 'top-[65px] opacity-100' : '-top-[350px] opacity-0'}`}>
                         <ul className="flex flex-col items-center justify-center gap-[1.5rem]">
                             {menus.map(menu => (
-                                <li key={menu.id}><a href="http://" className='text-primary text-[1.2rem] md:text-[2rem] font-semibold'>{menu.name}</a></li>
+                                <li key={menu.id}><a href="http://" className='text-primary text-[1.1rem] md:text-[2rem] font-semibold'>{menu.name}</a></li>
                             ))}
                         </ul>
                     </div>
