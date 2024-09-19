@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .hero{
     height: 100vh;
     background-image: url(./assets/img/hero.png);
