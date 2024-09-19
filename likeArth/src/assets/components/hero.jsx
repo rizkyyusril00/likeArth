@@ -12,11 +12,11 @@ export default function Hero() {
             <div className="hero w-full h-screen pt-[8rem] md:pt-[10rem] xl:pt-[8rem] px-[24px] overflow-hidden">
                 <div className="container mx-auto max-w-[1120px]">
                     <div className="hero-box flex flex-col items-center justify-center gap-[1rem]">
-                        <div className="flex flex-col items-center justify-center gap-[1rem]">
+                        <div className="flex flex-col items-center justify-center gap-[1.5rem] md:gap-[1rem]">
                             {/* tagline */}
                             <h1 className="text-primary text-[2.2rem] md:text-[3.5rem] xl:text-[4rem] leading-tight xl:leading-[72px] text-center font-bold">Ready to design an astounding digital product ?</h1>
                             {/* description */}
-                            <p className="text-primary text-[1.3rem] md:text-[1.5rem] xl:text-[1.125rem] text-center font-semibold leading-tight xl:leading-[28px]">If you're looking to achieve your business goals through delightful experiences and engaging design, then you're in the right place.</p>
+                            <p className="text-primary text-[1.3rem] md:text-[1.5rem] xl:text-[1.125rem] text-center font-normal leading-tight xl:leading-[28px]">If you're looking to achieve your business goals through delightful experiences and engaging design, then you're in the right place.</p>
                             {/* poins */}
                             <div className="hidden xl:flex items-center justify-center gap-[1.5rem]">
                                 {poins.map(poin => (
