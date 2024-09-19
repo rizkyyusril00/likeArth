@@ -9,7 +9,7 @@ export default function Hero() {
     ];
     return(
         <>
-            <div className="hero w-full h-screen pt-[8rem] md:pt-[10rem] xl:pt-[8rem] px-[24px]">
+            <div className="hero w-full h-screen pt-[8rem] md:pt-[10rem] xl:pt-[8rem] px-[24px] overflow-hidden">
                 <div className="container mx-auto max-w-[1120px]">
                     <div className="hero-box flex flex-col items-center justify-center gap-[1rem]">
                         <div className="flex flex-col items-center justify-center gap-[1rem]">

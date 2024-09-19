@@ -14,9 +14,9 @@ export default function Nav(){
 
     return(
         <>
-            <nav className="nav flex justify-center bg-transparent mx-auto sm:py-0 xl:py-4 fixed z-40 w-full">
+            <nav className="nav flex justify-center bg-transparent mx-auto sm:py-0 xl:py-4 fixed z-40 w-full overflow-hidden">
                 <div className="container mx-auto max-w-[1120px] relative z-40">
-                    <div className={`nav-box flex justify-between items-center p-[24px] xl:p-[24px] xl:rounded-2xl mx-auto relative z-10 transition-all duration-500 ease-in-out ${openMenu ? 'bg-white rounded-none' : 'bg-white bg-opacity-60 backdrop-blur-lg delay-500 rounded-b-xl'}`}>
+                    <div className={`nav-box flex justify-between items-center p-[16px] xl:p-[16px] xl:rounded-2xl mx-auto relative z-10 transition-all duration-500 ease-in-out ${openMenu ? 'bg-white rounded-none' : 'bg-white bg-opacity-60 backdrop-blur-lg delay-500 rounded-b-xl'}`}>
                         {/* logo */}
                         <figure className='flex items-center justify-center gap-[1rem]'>
                             <img src={Logo2} alt="" className='w-[3.125rem] h-[3.125rem] xl:w-[2.125rem] xl:h-[2.125rem] object-cover'/>
