@@ -14,12 +14,12 @@ function App() {
   return (
     <>
       <Nav />
-      {/* <Hero /> */}
-      {/* <Portfolio /> */}
-      {/* <WhyUs /> */}
-      {/* <OurService /> */}
-      {/* <HowItWorks /> */}
-      <Testimonials />
+      <Hero />
+      <Portfolio />
+      <WhyUs />
+      <OurService />
+      <HowItWorks />
+      {/* <Testimonials /> */}
       <Faqs />
       <FooterHero />
       <Footer />
