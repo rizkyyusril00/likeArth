@@ -54,7 +54,7 @@ export default function Testimonials(){
                     <div className='flex flex-col xl:flex-row justify-normal xl:justify-between gap-[2rem]'>
                         {/* atas */}
                         {/* kiri */}
-                        <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="200" className='flex flex-col items-stretch justify-start border border-primary rounded-[0.938rem] p-[1.5rem] gap-[1.5rem] w-full xl:w-[50%]'>
+                        <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="200" className='flex flex-col items-stretch justify-start border border-primary bg-white rounded-[0.938rem] p-[1.5rem] gap-[1.5rem] w-full xl:w-[50%]'>
                             {/* komentar */}
                             <p className='text-[#4A4A4A] text-[1.25rem] leading-[28px]'>"We worked with Likearth Studio for the past few years, and I really enjoy worked with them. They had a great design sense and really instrumental in our massive product design along with other marketing design stuffs. We did tons of iterations and they are very collaborative. We are very happy with how things work out. I highly recommend them."</p>
                             {/* profile */}
@@ -72,7 +72,7 @@ export default function Testimonials(){
                             </div>
                         </div>
                         {/* kanan */}
-                        <div  data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="400" className='flex flex-col items-stretch justify-start border border-primary rounded-[0.938rem] p-[1.5rem] gap-[1.5rem] w-full xl:w-[50%]'>
+                        <div  data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="400" className='flex flex-col items-stretch justify-start border border-primary bg-white rounded-[0.938rem] p-[1.5rem] gap-[1.5rem] w-full xl:w-[50%]'>
                             {/* komentar */}
                             <p className='text-[#4A4A4A] text-[1.25rem] leading-[28px]'>"Working with Likearth Studio was a game-changer for our business. They captured the essence of our brand effortlessly and translated it into stunning visuals. Their team's dedication and professionalism made the entire process seamless. Couldn't be happier with the results!"</p>
                             {/* profile */}
@@ -94,7 +94,7 @@ export default function Testimonials(){
                     <div className='flex flex-col xl:flex-row justify-normal xl:justify-between pt-[2rem] gap-[2rem] relative z-10'>
                         {/* bawah */}
                         {/* kiri */}
-                        <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="600" className='flex flex-col items-stretch justify-start border border-primary rounded-[0.938rem] p-[1.5rem] gap-[1.5rem] w-full xl:w-[50%]'>
+                        <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="600" className='flex flex-col items-stretch justify-start border border-primary bg-white rounded-[0.938rem] p-[1.5rem] gap-[1.5rem] w-full xl:w-[50%]'>
                             {/* komentar */}
                             <p className='text-[#4A4A4A] text-[1.25rem] leading-[28px]'>"We worked with Likearth Studio for the past few years, and I really enjoy worked with them. They had a great design sense and really instrumental in our massive product design along with other marketing design stuffs. We did tons of iterations and they are very collaborative. We are very happy with how things work out. I highly recommend them."</p>
                             {/* profile */}
@@ -112,7 +112,7 @@ export default function Testimonials(){
                             </div>
                         </div>
                         {/* kanan */}
-                        <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="800" className='flex flex-col items-stretch justify-start border border-primary rounded-[0.938rem] p-[1.5rem] gap-[1.5rem] w-full xl:w-[50%]'>
+                        <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="800" className='flex flex-col items-stretch justify-start border border-primary bg-white rounded-[0.938rem] p-[1.5rem] gap-[1.5rem] w-full xl:w-[50%]'>
                             {/* komentar */}
                             <p className='text-[#4A4A4A] text-[1.25rem] leading-[28px]'>"We worked with Likearth Studio for the past few years, and I really enjoy worked with them. They had a great design sense and really instrumental in our massive product design along with other marketing design stuffs. We did tons of iterations and they are very collaborative. We are very happy with how things work out. I highly recommend them."</p>
                             {/* profile */}

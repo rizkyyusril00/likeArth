@@ -157,7 +157,7 @@ export default function OurService(){
                                     <p className='text-[1.125rem] text-[#676767]'>We haven’t listed everything here. Let us know what you need, and we’ll deliver the best services tailored just for you.</p>
                                 </div>
                                 {/* kanan */}
-                                <div className='w-[70%] md:w-[40%] xl:w-[25%] flex justify-end items-center'>
+                                <div className='w-[90%] md:w-[40%] xl:w-[25%] flex justify-end items-center'>
                                     <Btn title="Call Us Now" style="flex justify-center items-center bg-white border border-primary px-[3.75rem] py-[1rem] rounded-[0.75rem] relative overflow-hidden w-full font-bold"/>
                                 </div>
                             </div>
