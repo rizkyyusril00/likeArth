@@ -10,6 +10,7 @@ export default {
         'scale-down-infinite': 'scale-down 1s ease-in-out infinite',
         'fade' : 'fade 2s ease-in-out',
         'fade2' : 'fade 2s ease-in-out 2s',
+        'move' : 'slide-right 1s ease-in-out'
       },
       keyframes: {
         'scale-down': {
@@ -24,6 +25,10 @@ export default {
           '0%': { opacity: '0', transform: 'translateY(20px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
+        'slide-right': {
+                    '0%': { transform: 'translateX(0)' },
+                    '100%': { transform: 'translateX(100%)' },
+                },
       },
       colors: {
         'primary': '#01717E',
