@@ -60,14 +60,14 @@ export default function OurService(){
                                     <div className="flex flex-col items-start justify-start gap-[0.2rem] xl:gap-[0.5rem] text-secondary w-[60%] md:w-auto">
                                         <p className='text-[1rem] xl:text-[0.875rem]'>OUR SERVICES</p>
                                         <p className='font-bold text-[1.5rem] md:text-[2rem]'>UX Design</p>
-                                        <p className='text-[1.1rem] xl:text-[1rem] leading-[28px]'>We ensure your design is intuitive, easy to use, and provides a delightful experience. </p>
+                                        <p className='text-[1.1rem] xl:text-[1rem] leading-[28px] text-[#676767]'>We ensure your design is intuitive, easy to use, and provides a delightful experience. </p>
                                     </div>
                                 </div>
                                 {/* bagian bawah */}
                                 <div className='flex justify-start items-center flex-wrap gap-[0.75rem] mt-[1.5rem]'>
                                     {first_services.map(first_service =>(
-                                        <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={first_service.delay} key={first_service.id} className='bg-white group hover:bg-primary transition-all duration-500 ease-in-out border border-[#E8E8E8] py-[0.75rem] px-[1rem] rounded-[0.75rem] gap-[1.5rem]'>
-                                            <span className='text-[#494949] group-hover:text-white text-[1rem] xl:text-[0.875rem]'>{first_service.name}</span>
+                                        <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={first_service.delay} key={first_service.id} className='bg-white group transition-all duration-500 ease-in-out border border-[#E8E8E8] py-[0.75rem] px-[1rem] rounded-[0.75rem] gap-[1.5rem]'>
+                                            <span className='text-[#494949] text-[1rem] xl:text-[0.875rem]'>{first_service.name}</span>
                                         </div>
                                     ))}
                                 </div>
@@ -84,14 +84,14 @@ export default function OurService(){
                                     <div className="flex flex-col items-start justify-start gap-[0.5rem] text-secondary w-[60%] md:w-auto">
                                         <p className='text-[1rem] xl:text-[0.875rem]'>OUR SERVICES</p>
                                         <p className='font-bold text-[1.5rem] md:text-[2rem]'>UI Design</p>
-                                        <p className='text-[1.1rem] xl:text-[1rem] leading-[28px]'>We craft captivating designs that catch your users' attention.</p>
+                                        <p className='text-[1.1rem] xl:text-[1rem] leading-[28px] text-[#676767]'>We craft captivating designs that catch your users' attention.</p>
                                     </div>
                                 </div>
                                 {/* bagian bawah */}
                                 <div className='flex justify-start items-center flex-wrap gap-[0.75rem] mt-[1.5rem]'>
                                     {second_services.map(second_service =>(
-                                        <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={second_service.delay} key={second_service.id} className='bg-white group hover:bg-primary transition-all duration-500 ease-in-out border border-[#E8E8E8] py-[0.75rem] px-[1rem] rounded-[0.75rem]'>
-                                            <span className='text-[#494949] group-hover:text-white text-[1rem] xl:text-[0.875rem]'>{second_service.name}</span>
+                                        <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={second_service.delay} key={second_service.id} className='bg-white group transition-all duration-500 ease-in-out border border-[#E8E8E8] py-[0.75rem] px-[1rem] rounded-[0.75rem]'>
+                                            <span className='text-[#494949] text-[1rem] xl:text-[0.875rem]'>{second_service.name}</span>
                                         </div>
                                     ))}
                                 </div>
@@ -111,14 +111,14 @@ export default function OurService(){
                                     <div className="flex flex-col items-start justify-start gap-[0.5rem] text-secondary w-[60%] md:w-auto">
                                         <p className='text-[1rem] xl:text-[0.875rem]'>OUR SERVICES</p>
                                         <p className='font-bold text-[1.5rem] md:text-[2rem]'>Illustration Design</p>
-                                        <p className='text-[1.1rem] xl:text-[1rem] leading-[28px]'>Let us turn your imagination into captivating illustrations.</p>
+                                        <p className='text-[1.1rem] xl:text-[1rem] leading-[28px] text-[#676767]'>Let us turn your imagination into captivating illustrations.</p>
                                     </div>
                                 </div>
                                 {/* bagian bawah */}
                                 <div className='flex justify-start items-center flex-wrap gap-[0.75rem] mt-[1.5rem]'>
                                     {third_services.map(third_service =>(
-                                        <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={third_service.delay} key={third_service.id} className='bg-white group hover:bg-primary transition-all duration-500 ease-in-out border border-[#E8E8E8] py-[0.75rem] px-[1rem] rounded-[0.75rem]'>
-                                            <span className='text-[#494949] group-hover:text-white text-[1rem] xl:text-[0.875rem]'>{third_service.name}</span>
+                                        <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={third_service.delay} key={third_service.id} className='bg-white group transition-all duration-500 ease-in-out border border-[#E8E8E8] py-[0.75rem] px-[1rem] rounded-[0.75rem]'>
+                                            <span className='text-[#494949] text-[1rem] xl:text-[0.875rem]'>{third_service.name}</span>
                                         </div>
                                     ))}
                                 </div>
@@ -135,14 +135,14 @@ export default function OurService(){
                                     <div className="flex flex-col items-start justify-start gap-[0.5rem] text-secondary w-[60%] md:w-auto">
                                         <p className='text-[1rem] xl:text-[0.875rem]'>OUR SERVICES</p>
                                         <p className='font-bold text-[1.5rem] md:text-[2rem]'>Branding & Graphic Design</p>
-                                        <p className='text-[1.1rem] xl:text-[1rem] leading-[28px]'>Make your brand more professional and memorable.</p>
+                                        <p className='text-[1.1rem] xl:text-[1rem] leading-[28px] text-[#676767]'>Make your brand more professional and memorable.</p>
                                     </div>
                                 </div>
                                 {/* bagian bawah */}
                                 <div className='flex justify-start items-center flex-wrap gap-[0.75rem] mt-[1.5rem]'>
                                     {fourth_services.map(fourth_service =>(
-                                        <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={fourth_service.delay} key={fourth_service.id} className='bg-white group hover:bg-primary transition-all duration-500 ease-in-out border border-[#E8E8E8] py-[0.75rem] px-[1rem] rounded-[0.75rem]'>
-                                            <span className='text-[#494949] group-hover:text-white text-[1rem] xl:text-[0.875rem]'>{fourth_service.name}</span>
+                                        <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={fourth_service.delay} key={fourth_service.id} className='bg-white group transition-all duration-500 ease-in-out border border-[#E8E8E8] py-[0.75rem] px-[1rem] rounded-[0.75rem]'>
+                                            <span className='text-[#494949] text-[1rem] xl:text-[0.875rem]'>{fourth_service.name}</span>
                                         </div>
                                     ))}
                                 </div>
@@ -157,7 +157,7 @@ export default function OurService(){
                                     <p className='text-[1.125rem] text-[#676767]'>We haven’t listed everything here. Let us know what you need, and we’ll deliver the best services tailored just for you.</p>
                                 </div>
                                 {/* kanan */}
-                                <a href="https://l.instagram.com/?u=https%3A%2F%2Fcalendly.com%2Flikearthstudio%2F15min&e=AT1pwBz33yjxE6M0Fhzvvf_9YRXkHTFHLvN9mLQXA5SN05Wq-C4K_pUQjGKpW_5MmUwjLwJFnluDDfrCM4g4GLmt8m9ZuDn_mqvvyQ" target="_blank" className='w-[90%] md:w-[40%] xl:w-[25%] flex justify-end items-center'>
+                                <a href="https://l.instagram.com/?u=https%3A%2F%2Fcalendly.com%2Flikearthstudio%2F15min&e=AT1pwBz33yjxE6M0Fhzvvf_9YRXkHTFHLvN9mLQXA5SN05Wq-C4K_pUQjGKpW_5MmUwjLwJFnluDDfrCM4g4GLmt8m9ZuDn_mqvvyQ" target="_blank" className='w-[100%] md:w-[40%] xl:w-[25%] flex justify-end items-center'>
                                     <Btn title="Call Us Now" style="flex justify-center items-center bg-primary hover:bg-[#04525b] transition-all duration-500 ease-in-out border border-primary px-[3.75rem] py-[1rem] rounded-[0.75rem] relative overflow-hidden w-full font-bold"/>
                                 </a>
                             </div>

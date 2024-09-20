@@ -14,10 +14,10 @@ export default {
       keyframes: {
         'scale-down': {
           '0%': {
-            scale: 1,
+            scale: 0,
           },
           '100%': {
-            scale: 0,
+            scale: 1,
           },
         },
         fade: {

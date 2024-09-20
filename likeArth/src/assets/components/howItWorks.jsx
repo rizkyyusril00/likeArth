@@ -33,7 +33,7 @@ export default function HowItWorks(){
                                 <p data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="200" className="text-[1rem] xl:text-[0.875rem] leading-[28px]">HOW IT WORK</p>
                                 <h2 data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="400" className="font-bold text-secondary text-[2.5rem] leading-[52px] text-center">Seamlessly Bringing Your Vision to Life</h2>
                             </div>
-                            <p data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="600" className="text-[1.25rem] font-semibold leading-[28px] text-center text-[#676767]">From Concept to Creation, Made Simple.</p>
+                            <p data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="600" className="text-[1.25rem] font-normal leading-[28px] text-center text-[#676767]">From Concept to Creation, Made Simple.</p>
                         </div>
                         {/* bawah */}
                         <div className="flex md:hidden xl:flex flex-col xl:flex-row justify-center gap-[2rem]">
