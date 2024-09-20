@@ -47,7 +47,7 @@ export default function OurService(){
                 <div className='container mx-auto max-w-[1120px]'>
                     <div className='flex flex-col gap-[2.5rem] xl:gap-0'>
                         {/* atas */}
-                        <div className="our-service-box pt-[5rem] flex flex-col xl:grid-flow-row justify-between gap-[2.5rem]">
+                        <div className="our-service-box pt-[5rem] flex flex-col xl:flex-row justify-between gap-[2.5rem]">
                             {/* box1 */}
                             <div className="flex flex-col justify-start items-start w-full xl:w-[50%]">
                                 {/* bagain atas */}
@@ -98,7 +98,7 @@ export default function OurService(){
                             </div>
                         </div>
                         {/* bawah */}
-                        <div className="our-service-box pt-0 xl:pt-[5rem] flex flex-col xl:grid-flow-row justify-between gap-[2.5rem]">
+                        <div className="our-service-box pt-0 xl:pt-[5rem] flex flex-col xl:flex-row justify-between gap-[2.5rem]">
                             {/* box1 */}
                             <div className="flex flex-col justify-start items-start w-full xl:w-[50%]">
                                 {/* bagain atas */}
@@ -158,7 +158,7 @@ export default function OurService(){
                                 </div>
                                 {/* kanan */}
                                 <div className='w-[90%] md:w-[40%] xl:w-[25%] flex justify-end items-center'>
-                                    <Btn title="Call Us Now" style="flex justify-center items-center bg-white border border-primary px-[3.75rem] py-[1rem] rounded-[0.75rem] relative overflow-hidden w-full font-bold"/>
+                                    <Btn title="Call Us Now" style="flex justify-center items-center bg-primary border border-primary px-[3.75rem] py-[1rem] rounded-[0.75rem] relative overflow-hidden w-full font-bold"/>
                                 </div>
                             </div>
                         </div>

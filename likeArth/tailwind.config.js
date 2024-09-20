@@ -8,6 +8,8 @@ export default {
     extend: {
       animation: {
         'scale-down-infinite': 'scale-down 1s ease-in-out infinite',
+        'fade' : 'fade 2s ease-in-out',
+        'fade2' : 'fade 2s ease-in-out 2s',
       },
       keyframes: {
         'scale-down': {
@@ -17,6 +19,10 @@ export default {
           '100%': {
             scale: 0,
           },
+        },
+        fade: {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
         },
       },
       colors: {

@@ -28,7 +28,7 @@ export default function Testimonials(){
                                 <p data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="200" className="text-[#676767] text-[1rem] xl:text-[0.875rem] leading-[28px] text-center">TESTIMONIALS</p>
                                 <h2 data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="500" className="font-bold text-[#1C1C1C] text-[2.5rem] leading-[52px] text-center">What Clients’ Said</h2>
                             </div>
-                            <p data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="800" className="text-[#676767] text-[1.25rem] font-semibold leading-[28px] text-center w-full md:w-[80%] xl:w-full">Dive deeper into some of our most successful projects and see the impact we’ve made for our clients.</p>
+                            <p data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="800" className="text-[#676767] text-[1.25rem] font-semibold leading-[28px] text-center xl:text-start w-full md:w-[80%] xl:w-full">Dive deeper into some of our most successful projects and see the impact we’ve made for our clients.</p>
                         </div>
                         {/* box2 */}
                         <figure data-aos="fade-left" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="500" className="">
@@ -60,7 +60,7 @@ export default function Testimonials(){
                             {/* profile */}
                             <div className="flex justify-start items-center gap-[1rem]">
                                 {/* pp */}
-                                <div className='w-[3.125rem] h-[3.125rem] rounded-[50%] bg-primary'></div>
+                                {/* <div className='w-[3.125rem] h-[3.125rem] rounded-[50%] bg-primary'></div> */}
                                 <div className='flex flex-col items-start justify-start'>
                                     <p className='text-start text-[1.2rem] xl:text-[1rem] font-bold'>YourName</p>
                                     <div className='flex items-center justify-center gap-[0.5rem]'>
@@ -78,7 +78,7 @@ export default function Testimonials(){
                             {/* profile */}
                             <div className="flex justify-start items-center gap-[1rem]">
                                 {/* pp */}
-                                <div className='w-[3.125rem] h-[3.125rem] rounded-[50%] bg-primary'></div>
+                                {/* <div className='w-[3.125rem] h-[3.125rem] rounded-[50%] bg-primary'></div> */}
                                 <div className='flex flex-col items-start justify-start'>
                                     <p className='text-start text-[1.2rem] xl:text-[1rem] font-bold'>YourName</p>
                                     <div className='flex items-center justify-center gap-[0.5rem]'>
@@ -100,7 +100,7 @@ export default function Testimonials(){
                             {/* profile */}
                             <div className="flex justify-start items-center gap-[1rem]">
                                 {/* pp */}
-                                <div className='w-[3.125rem] h-[3.125rem] rounded-[50%] bg-primary'></div>
+                                {/* <div className='w-[3.125rem] h-[3.125rem] rounded-[50%] bg-primary'></div> */}
                                 <div className='flex flex-col items-start justify-start'>
                                     <p className='text-start text-[1.2rem] xl:text-[1rem] font-bold'>YourName</p>
                                     <div className='flex items-center justify-center gap-[0.5rem]'>
@@ -118,7 +118,7 @@ export default function Testimonials(){
                             {/* profile */}
                             <div className="flex justify-start items-center gap-[1rem]">
                                 {/* pp */}
-                                <div className='w-[3.125rem] h-[3.125rem] rounded-[50%] bg-primary'></div>
+                                {/* <div className='w-[3.125rem] h-[3.125rem] rounded-[50%] bg-primary'></div> */}
                                 <div className='flex flex-col items-start justify-start'>
                                     <p className='text-start text-[1.2rem] xl:text-[1rem] font-bold'>YourName</p>
                                     <div className='flex items-center justify-center gap-[0.5rem]'>

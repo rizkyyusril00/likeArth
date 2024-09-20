@@ -6,7 +6,7 @@ export default function Accordion({title, isi, delay}){
 
     return(
         <>
-            <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={delay} onClick={() => setAccordionOpen(!accordionOpen)} className="bg-transparent cursor-pointer py-4 xl:py-0 relative z-20 border-b border-gray-500">
+            <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={delay} onClick={() => setAccordionOpen(!accordionOpen)} className="bg-transparent cursor-pointer py-4 xl:py-0 relative z-20 border-b border-secondary">
                 {/* Button accordion */}
                 <div  className="flex justify-between w-full px-6 py-4 bg-transparent">
                     <span className="font-bold text-black text-[1rem] md:text-[1.4rem] xl:text-[1rem]">{title}</span>

@@ -9,11 +9,11 @@ export default function FooterHero(){
     ];
     return(
         <>
-            <div className="footerHero w-full h-screen pt-[12.625rem] px-[24px] relative z-20">
+            <div className="footerHero w-full h-screen pt-[12.625rem] px-[24px] relative z-30">
                 <div className="container mx-auto max-w-[1120px]">
                     <div className="footerHero-box flex flex-col items-center justify-center gap-[1.5rem] pt-[0.2rem] md:pt-[10rem]">
                         <h2 data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="300" className="text-[2rem] md:text-[2.5rem] font-bold text-primary text-center leading-tight xl:leading-[72px]">Transform Your Vision into Reality</h2>
-                        <p data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="500" className="text-[1.5rem] md:text-[2.5rem] text-primary text-center leading-tight xl:leading-[28px]">Crafting exceptional designs that elevate your brand and captivate your audience.</p>
+                        <p data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="500" className="text-[1.5rem] md:text-[2.5rem] text-primary text-center leading-[28px] xl:leading-[52px]">Crafting exceptional designs that elevate your brand and captivate your audience.</p>
                         {/* poins */}
                         <div className="flex items-center justify-center gap-[1.5rem]">
                             {poins.map(poin => (

@@ -47,6 +47,16 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+/* 2xl */
+@media (min-width: 1536px){
+    .footerHero{
+        height: 2000px;
+        background-image: url(./assets/img/footer.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
 /* tablet */
 @media (max-width: 1020px){
     .footerHero{
