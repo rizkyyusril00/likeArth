@@ -45,14 +45,14 @@ export default function Hero() {
                                     </motion.div>
                                 ))}
                             </div>
-                            {/* mobile */}
-                            <div className='flex justify-center items-center gap-[0.5rem] xl:hidden'>
+                            {/* mobile poins */}
+                            <motion.div whileInView={{y: [25, 0], opacity: [0, 1] }} transition={{delay: 0.8, duration: 1.5, ease: "easeInOut" }} viewport={{ once: true }} className='flex justify-center items-center gap-[0.5rem] xl:hidden'>
                                 <i className="bi bi-check-circle text-primary text-[1rem]"></i>
                                 <p className="text-[1rem] md:text-[1.4rem] text-[#676767] text-center">{Poins}</p>
-                            </div>
+                            </motion.div>
                         </div>
                         {/* contact us */}
-                        <div className="flex items-center justify-center gap-1 md:gap-4 xl:gap-[0.625rem] bg-white pl-[0.75rem] rounded-[0.938rem] relative">
+                        <div className="flex items-center justify-center gap-1 md:gap-4 xl:gap-[0.625rem] bg-white pl-[0.75rem] rounded-[0.938rem] relative w-auto transition-all duration-500 ease-in-out">
                             <div className='flex items-center justify-center gap-[0.625rem]'>
                                 {/* icon pulse */}
                                 <div className="invisible flex items-center justify-center bg-red-500 w-[1rem] h-[1rem] rounded-[50%] isolate">
