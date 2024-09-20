@@ -66,8 +66,8 @@ export default function OurService(){
                                 {/* bagian bawah */}
                                 <div className='flex justify-start items-center flex-wrap gap-[0.75rem] mt-[1.5rem]'>
                                     {first_services.map(first_service =>(
-                                        <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={first_service.delay} key={first_service.id} className='bg-white border border-[#E8E8E8] py-[0.75rem] px-[1rem] rounded-[0.75rem] gap-[1.5rem]'>
-                                            <span className='text-[#494949] text-[1rem] xl:text-[0.875rem]'>{first_service.name}</span>
+                                        <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={first_service.delay} key={first_service.id} className='bg-white group hover:bg-primary transition-all duration-500 ease-in-out border border-[#E8E8E8] py-[0.75rem] px-[1rem] rounded-[0.75rem] gap-[1.5rem]'>
+                                            <span className='text-[#494949] group-hover:text-white text-[1rem] xl:text-[0.875rem]'>{first_service.name}</span>
                                         </div>
                                     ))}
                                 </div>
@@ -90,8 +90,8 @@ export default function OurService(){
                                 {/* bagian bawah */}
                                 <div className='flex justify-start items-center flex-wrap gap-[0.75rem] mt-[1.5rem]'>
                                     {second_services.map(second_service =>(
-                                        <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={second_service.delay} key={second_service.id} className='bg-white border border-[#E8E8E8] py-[0.75rem] px-[1rem] rounded-[0.75rem]'>
-                                            <span className='text-[#494949] text-[1rem] xl:text-[0.875rem]'>{second_service.name}</span>
+                                        <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={second_service.delay} key={second_service.id} className='bg-white group hover:bg-primary transition-all duration-500 ease-in-out border border-[#E8E8E8] py-[0.75rem] px-[1rem] rounded-[0.75rem]'>
+                                            <span className='text-[#494949] group-hover:text-white text-[1rem] xl:text-[0.875rem]'>{second_service.name}</span>
                                         </div>
                                     ))}
                                 </div>
@@ -117,8 +117,8 @@ export default function OurService(){
                                 {/* bagian bawah */}
                                 <div className='flex justify-start items-center flex-wrap gap-[0.75rem] mt-[1.5rem]'>
                                     {third_services.map(third_service =>(
-                                        <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={third_service.delay} key={third_service.id} className='bg-white border border-[#E8E8E8] py-[0.75rem] px-[1rem] rounded-[0.75rem]'>
-                                            <span className='text-[#494949] text-[1rem] xl:text-[0.875rem]'>{third_service.name}</span>
+                                        <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={third_service.delay} key={third_service.id} className='bg-white group hover:bg-primary transition-all duration-500 ease-in-out border border-[#E8E8E8] py-[0.75rem] px-[1rem] rounded-[0.75rem]'>
+                                            <span className='text-[#494949] group-hover:text-white text-[1rem] xl:text-[0.875rem]'>{third_service.name}</span>
                                         </div>
                                     ))}
                                 </div>
@@ -141,8 +141,8 @@ export default function OurService(){
                                 {/* bagian bawah */}
                                 <div className='flex justify-start items-center flex-wrap gap-[0.75rem] mt-[1.5rem]'>
                                     {fourth_services.map(fourth_service =>(
-                                        <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={fourth_service.delay} key={fourth_service.id} className='bg-white border border-[#E8E8E8] py-[0.75rem] px-[1rem] rounded-[0.75rem]'>
-                                            <span className='text-[#494949] text-[1rem] xl:text-[0.875rem]'>{fourth_service.name}</span>
+                                        <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={fourth_service.delay} key={fourth_service.id} className='bg-white group hover:bg-primary transition-all duration-500 ease-in-out border border-[#E8E8E8] py-[0.75rem] px-[1rem] rounded-[0.75rem]'>
+                                            <span className='text-[#494949] group-hover:text-white text-[1rem] xl:text-[0.875rem]'>{fourth_service.name}</span>
                                         </div>
                                     ))}
                                 </div>
@@ -150,7 +150,7 @@ export default function OurService(){
                         </div>
                         {/* call us */}
                         <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="500" className='mt-[3.75rem] mb-[5rem]'>
-                            <div className='flex flex-col bg-transparent md:bg-white px-[2rem] py-[1.5rem] border border-primary rounded-[1.5rem] gap-[1rem] xl:gap-[2.5rem]'>
+                            <div className='flex flex-col xl:flex-row bg-transparent md:bg-white px-[2rem] py-[1.5rem] border border-primary rounded-[1.5rem] gap-[1rem] xl:gap-[2.5rem]'>
                                 {/* kiri */}
                                 <div className='w-full xl:w-[75%] flex flex-col items-start justify-start gap-[0.5rem]'>
                                     <h2 className='text-[1.5rem] md:text-[2rem] font-bold text-secondary'>Can't find what you're looking for?</h2>

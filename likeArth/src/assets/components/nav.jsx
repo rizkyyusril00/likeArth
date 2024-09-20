@@ -34,7 +34,7 @@ export default function Nav(){
                         </ul>
                         {/* kontak */}
                         <motion.div>
-                            <Btn title="Contact Us Today" style="hidden xl:flex justify-center items-center bg-primary border border-primary px-[1.5rem] py-[0.719rem] rounded-[0.75rem] relative overflow-hidden"/>
+                            <Btn title="Contact Us Today" style="hidden xl:flex justify-center items-center bg-primary hover:bg-secondary transition-all duration-500 ease-in-out border border-primary px-[1.5rem] py-[0.719rem] rounded-[0.75rem] relative overflow-hidden"/>
                         </motion.div>
                         {/* hamburger menu */}
                         <button onClick={() => setOpenMenu(!openMenu)} className='xl:hidden flex flex-col justify-between items-center w-[30px] md:w-[40px] h-[20px] md:h-[30px] gap-[2px] mt-1'>
