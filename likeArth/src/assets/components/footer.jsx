@@ -8,10 +8,10 @@ import Ft5 from '../img/icon/ft5.png'
 
 export default function Footer(){
     const ft_icons = [
-        { id: 1, icon: Ft1, link: '#'},
+        { id: 1, icon: Ft1, link: 'https://www.instagram.com/likearthstudio/'},
         { id: 2, icon: Ft2, link: '#'},
-        { id: 3, icon: Ft3, link: '#'},
-        { id: 4, icon: Ft4, link: '#'},
+        { id: 3, icon: Ft3, link: 'https://www.instagram.com/likearthstudio/'},
+        { id: 4, icon: Ft4, link: 'https://www.linkedin.com/company/likearth-studio/'},
         { id: 5, icon: Ft5, link: '#'}
     ];
     return (
@@ -29,7 +29,7 @@ export default function Footer(){
                         <div className='flex justify-center items-center md:justify-start md:items-start gap-[1rem] xl:gap-[0.75rem]'>
                             {ft_icons.map(ft_icon => (
                                 <figure key={ft_icon.id}>
-                                    <a href={ft_icon.link} className='cursor-pointer'><img src={ft_icon.icon} alt="" /></a>
+                                    <a href={ft_icon.link} target="_blank" className='cursor-pointer'><img src={ft_icon.icon} alt="" /></a>
                                 </figure>
                             ))}
                         </div>

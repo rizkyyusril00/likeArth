@@ -33,12 +33,12 @@ export default function Nav(){
                             ))}
                         </ul>
                         {/* kontak */}
-                        <motion.div>
-                            <Btn title="Contact Us Today" style="hidden xl:flex justify-center items-center bg-primary hover:bg-secondary transition-all duration-500 ease-in-out border border-primary px-[1.5rem] py-[0.719rem] rounded-[0.75rem] relative overflow-hidden"/>
-                        </motion.div>
+                        <a href="https://l.instagram.com/?u=https%3A%2F%2Fcalendly.com%2Flikearthstudio%2F15min&e=AT1pwBz33yjxE6M0Fhzvvf_9YRXkHTFHLvN9mLQXA5SN05Wq-C4K_pUQjGKpW_5MmUwjLwJFnluDDfrCM4g4GLmt8m9ZuDn_mqvvyQ" target="_blank">
+                            <Btn title="Contact Us Today" style="hidden xl:flex justify-center items-center bg-primary hover:bg-[#04525b] transition-all duration-500 ease-in-out border border-primary px-[1.5rem] py-[0.719rem] rounded-[0.75rem] relative overflow-hidden"/>
+                        </a>
                         {/* hamburger menu */}
                         <button onClick={() => setOpenMenu(!openMenu)} className='xl:hidden flex flex-col justify-between items-center w-[30px] md:w-[40px] h-[20px] md:h-[30px] gap-[2px] mt-1'>
-                            <span className={`w-full h-[2px] bg-primary transition-all ease-in-out duration-500 delay-150 ${openMenu ? 'rotate-45 translate-y-1 md:rotate-45 md:translate-y-4' : 'rotate-0 translate-y-0'}`}></span>
+                            <span className={`w-full h-[2px] bg-primary transition-all ease-in-out duration-500 delay-150 ${openMenu ? 'rotate-45 translate-y-1.5 md:rotate-45 md:translate-y-4' : 'rotate-0 translate-y-0'}`}></span>
                             <span className={`w-full h-[2px] bg-primary transition-all ease-in-out duration-500 ${openMenu ? 'opacity-0' : 'opacity-100 delay-150'}`}></span>
                             <span className={`w-full h-[2px] bg-primary transition-all ease-in-out duration-500 delay-150 ${openMenu ? '-rotate-45 -translate-y-3' : 'rotate-0 translate-y-0'}`}></span>
                         </button >
