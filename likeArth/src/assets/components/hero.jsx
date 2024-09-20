@@ -20,7 +20,7 @@ export default function Hero() {
     ];
     return(
         <>
-            <div className="hero w-full h-screen pt-[8rem] md:pt-[10rem] xl:pt-[8rem] px-[24px] overflow-hidden transition-all ease-in-out duration-500">
+            <div id='home' className="hero w-full h-screen pt-[8rem] md:pt-[10rem] xl:pt-[8rem] px-[24px] overflow-hidden transition-all ease-in-out duration-500">
                 <div className="container mx-auto max-w-[1120px]">
                     <div className="hero-box flex flex-col items-center justify-center gap-[1rem]">
                         <div className="flex flex-col items-center justify-center gap-[1.5rem] md:gap-[1rem]">
@@ -62,9 +62,9 @@ export default function Hero() {
                                 <p className='py-[0.719rem] leading-[28px] text-[0.7rem] md:text-[1.1rem]'><span className="text-primary">1 Slot available !</span> <span className='hidden md:inline-block'>Let's talk</span> <span className='hidden xl:inline-block'>to get your project started.</span></p>
                             </div>
                             {/* icon pulse */}
-                                <div className="absolute left-[0.75rem] flex items-center justify-center bg-primary bg-opacity-25  w-[1rem] h-[1rem] rounded-[50%] animate-scale-down-infinite">
-                                </div>
-                                <div className="w-[0.625rem] h-[0.625rem] bg-primary rounded-[50%] absolute left-[0.96rem]"></div>
+                            <div className="absolute left-[0.75rem] flex items-center justify-center bg-primary bg-opacity-25  w-[1rem] h-[1rem] rounded-[50%] animate-scale-down-infinite">
+                            </div>
+                            <div className="w-[0.625rem] h-[0.625rem] bg-primary rounded-[50%] absolute left-[0.96rem]"></div>
                             {/* btn */}
                                 <Btn title="Contact Us Today" style="flex justify-center items-center relative bg-primary text-white border border-primary overflow-hidden rounded-[0.938rem] py-[0.719rem] px-[1.5rem] absolute"/>
                         </div>

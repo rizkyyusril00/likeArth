@@ -7,7 +7,7 @@ import Awan2 from '../img/awan2.png'
 
 export default function WhyUs(){
     return(
-        <div className="whyus relative px-[24px] w-full overflow-hidden">
+        <div id='whyus' className="whyus relative px-[24px] w-full overflow-hidden">
             <div className="container mx-auto max-w-[1120px]">
                 {/* 1 */}
                 <div className="whyus-box flex flex-col md:flex-row justify-start md:justify-between items-start md:items-center gap-[3.063rem] pt-[5rem] relative z-10">

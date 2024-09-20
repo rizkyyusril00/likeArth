@@ -43,7 +43,7 @@ export default function OurService(){
     ];
     return(
         <>
-            <div className="our-service bg-[#f0f9fa] px-[24px]">
+            <div id='services' className="our-service bg-[#f0f9fa] px-[24px]">
                 <div className='container mx-auto max-w-[1120px]'>
                     <div className='flex flex-col gap-[2.5rem] xl:gap-0'>
                         {/* atas */}
