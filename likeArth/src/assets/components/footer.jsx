@@ -36,10 +36,10 @@ export default function Footer(){
                         </div>
                     </div>
                     {/* kanan */}
-                    <div className='flex flex-col items-center  gap-[1rem]'>
-                        <div className='flex flex-col items-center gap-[1rem] justify-center xl:items-end xl:justify-end'>
-                            <h2 className='text-[1.1rem] md:text-[1.25rem] text-secondary text-start md:text-end'>Sukabumi City, West Java, Indonesia</h2>
-                            <h2 className='text-[1.1rem] md:text-[1.25rem] text-secondary text-start md:text-end'>Copyright 2024 Likearth Studio</h2>
+                    <div className='flex flex-col items-center md:end gap-[1rem]'>
+                        <div className='flex flex-col items-center gap-[1rem] justify-center md:items-end md:justify-end'>
+                            <h2 className='text-[1.1rem] md:text-[1.25rem] text-secondary text-center md:text-end'>Sukabumi City, West Java, Indonesia</h2>
+                            <h2 className='text-[1.1rem] md:text-[1.25rem] text-secondary text-center md:text-end'>Copyright 2024 Likearth Studio</h2>
                         </div>
                     </div>
                 </div>
