@@ -40,20 +40,20 @@ export default function FooterHero(){
                         {/* contact us */}
                         <div className="flex items-center justify-center gap-1 md:gap-4 xl:gap-[0.625rem] bg-white pl-[0.75rem] rounded-[0.938rem] relative">
                             <div className='flex items-center justify-center gap-[0.625rem]'>
-                                {/* icon pulse */}
+                                {/* icon pulse invis */}
                                 <div className="invisible flex items-center justify-center bg-red-500 w-[1rem] h-[1rem] rounded-[50%] isolate">
                                     <div className="w-[0.625rem] h-[0.625rem] bg-primary rounded-[50%]"></div>
                                 </div>
                                 {/* icon pulse */}
                                 <div className="absolute left-[0.75rem] flex items-center justify-center bg-primary bg-opacity-25  w-[1rem] h-[1rem] rounded-[50%] animate-scale-down-infinite">
                                 </div>
-                                <div className="w-[0.625rem] h-[0.625rem] bg-primary rounded-[50%] absolute left-[0.96rem]"></div>
+                                <div className="w-[0.625rem] h-[0.625rem] bg-primary rounded-[50%] absolute left-[0.90rem]"></div>
                                 {/*attention */}
-                                <p className='py-[0.1rem] md:py-[0.7rem] leading-[28px] text-[0.7rem] md:text-[1.1rem]'><span className="text-primary">1 Slot available !</span> <span className='hidden md:inline-block'>Let's talk</span> <span className='hidden xl:inline-block'>to get your project started.</span></p>
+                                <p className='py-[0.1rem] md:py-[0.6rem] leading-[28px] text-[0.7rem] md:text-[1.1rem]'><span className="text-primary">1 Slot available !</span> <span className='hidden md:inline-block text-[#676767]'>Let's talk</span> <span className='hidden xl:inline-block text-[#676767]'>to get your project started.</span></p>
                             </div>
                             {/* btn */}
                             <a href="https://l.instagram.com/?u=https%3A%2F%2Fcalendly.com%2Flikearthstudio%2F15min&e=AT1pwBz33yjxE6M0Fhzvvf_9YRXkHTFHLvN9mLQXA5SN05Wq-C4K_pUQjGKpW_5MmUwjLwJFnluDDfrCM4g4GLmt8m9ZuDn_mqvvyQ" target="_blank">
-                                <Btn title="Contact Us Today" style="flex justify-center items-center relative bg-primary hover:bg-[#04525b] transition-all duration-500 ease-in-out text-white border border-primary overflow-hidden rounded-[0.938rem] py-[0.719rem] px-[1.5rem]"/>                                
+                                <Btn title="Book a Call" style="flex justify-center items-center relative bg-primary hover:bg-[#04525b] transition-all duration-500 ease-in-out text-white border border-primary overflow-hidden rounded-[0.938rem] py-[0.719rem] px-[1.5rem]"/>                                
                             </a>
                         </div>
                     </div>

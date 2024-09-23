@@ -16,6 +16,9 @@ export default {
           '0%': {
             scale: 0,
           },
+          '50%': {
+            scale: 0.5,
+          },
           '100%': {
             scale: 1,
           },

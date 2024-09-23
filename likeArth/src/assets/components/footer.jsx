@@ -1,9 +1,9 @@
 import Logo2 from '../img/logo2.png'
-import Ft1 from '../img/icon/ft1.png'
-import Ft2 from '../img/icon/ft2.png'
-import Ft3 from '../img/icon/ft3.png'
-import Ft4 from '../img/icon/ft4.png'
-import Ft5 from '../img/icon/ft5.png'
+import Ft1 from '../img/icon2/ft1.png'
+import Ft2 from '../img/icon2/ft2.png'
+import Ft3 from '../img/icon2/ft3.png'
+import Ft4 from '../img/icon2/ft4.png'
+import Ft5 from '../img/icon2/ft5.png'
 
 
 export default function Footer(){
@@ -25,7 +25,6 @@ export default function Footer(){
                             <img src={Logo2} alt="" className='w-[2.125rem] h-[2.125rem] md:w-[2.5rem] md:h-[2.5rem] xl:w-[2.125rem] xl:h-[2.125rem] object-cover'/>
                             <figcaption className='text-primary text-[1.5rem] md:text-[1.7rem] xl:text-[1.5rem] font-bold'>Likearth Studio</figcaption>
                         </figure>
-                        <p className='text-[#676767] text-[20px] leading-[28px]'>"The Art of Leaving a Legacy"</p>
                         {/* icons */}
                         <div className='flex justify-center items-center md:justify-start md:items-start gap-[1rem] xl:gap-[0.75rem]'>
                             {ft_icons.map(ft_icon => (
@@ -35,12 +34,14 @@ export default function Footer(){
                             ))}
                         </div>
                     </div>
+                    {/* tengah */}
+                    <div className='flex items-center justify-center'>
+                        <p className='text-[#08605F] text-[20px] leading-[28px]'>"The Art of Leaving a Legacy"</p>
+                    </div>
                     {/* kanan */}
-                    <div className='flex flex-col items-center md:end gap-[1rem]'>
-                        <div className='flex flex-col items-center gap-[1rem] justify-center md:items-end md:justify-end'>
-                            <h2 className='text-[1.1rem] md:text-[1.25rem] text-secondary text-center md:text-end'>Sukabumi City, West Java, Indonesia</h2>
-                            <h2 className='text-[1.1rem] md:text-[1.25rem] text-secondary text-center md:text-end'>Copyright 2024 Likearth Studio</h2>
-                        </div>
+                    <div className='flex flex-col items-center md:items-end justify-center gap-[1rem]'>
+                        <h2 className='text-[1.1rem] md:text-[1.25rem] text-secondary text-center md:text-end'>Sukabumi City, West Java, Indonesia</h2>
+                        <h2 className='text-[1.1rem] md:text-[1.25rem] text-secondary text-center md:text-end'>Copyright 2024 Likearth Studio</h2>
                     </div>
                 </div>
             </footer>

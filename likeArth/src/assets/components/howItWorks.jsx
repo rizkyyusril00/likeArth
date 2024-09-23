@@ -1,7 +1,7 @@
 import Works1 from '../img/works1.png'
 import Works2 from '../img/works2.png'
 import Works3 from '../img/works3.png'
-import Works4 from '../img/works4.png'
+import Works4 from '../img/works4.svg'
 import Awan2 from '../img/awan2.png'
 import Awan4 from '../img/awan4.png'
 

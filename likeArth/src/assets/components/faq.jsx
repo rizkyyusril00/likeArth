@@ -36,9 +36,9 @@ export default function Faq(){
                         </div>
                     </div>
                 </div>
-                    <figure className='absolute -bottom-[400px] xl:-bottom-[850px] 2xl:-bottom-[1050px] left-0 z-10 w-full'>
+                    {/* <figure className='absolute -bottom-[400px] xl:-bottom-[850px] 2xl:-bottom-[1050px] left-0 z-10 w-full'>
                         <img src={BlueGrad} alt="" className='w-full'/>
-                    </figure>
+                    </figure> */}
             </div>
         </>
     )

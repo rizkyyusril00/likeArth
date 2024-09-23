@@ -1,4 +1,4 @@
-import Testimoni from '../img/testimoni1.png'
+import Testimoni from '../img/testimoni1.svg'
 import Marquee from "react-fast-marquee";
 import Clients1 from "../img/client1.png"
 import Clients2 from "../img/client2.png"
@@ -31,7 +31,7 @@ export default function Testimonials(){
                             <p data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="800" className="text-[#676767] text-[1.25rem] font-normal leading-[28px] text-center xl:text-start w-full md:w-[80%] xl:w-full">Dive deeper into some of our most successful projects and see the impact we’ve made for our clients.</p>
                         </div>
                         {/* box2 */}
-                        <figure data-aos="fade-left" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="500" className="">
+                        <figure data-aos="fade-left" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="500" className="relative z-20">
                             <img src={Testimoni} alt="" />
                         </figure>
                     </div>
@@ -51,7 +51,7 @@ export default function Testimonials(){
                     </div>
                     {/* komentar */}
                     {/* 1 */}
-                    <div className='flex flex-col xl:flex-row justify-normal xl:justify-between gap-[2rem]'>
+                    <div className='flex flex-col xl:flex-row justify-normal xl:justify-between xl:items-start gap-[2rem]'>
                         {/* atas */}
                         {/* kiri */}
                         <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="200" className='flex flex-col items-stretch justify-start border border-primary bg-white rounded-[0.938rem] p-[1.5rem] gap-[1.5rem] w-full xl:w-[50%]'>
@@ -91,7 +91,7 @@ export default function Testimonials(){
                         </div>                  
                     </div>
                     {/* 2 */}
-                    <div className='flex flex-col xl:flex-row justify-normal xl:justify-between pt-[2rem] gap-[2rem] relative z-10'>
+                    <div className='flex flex-col xl:flex-row justify-normal xl:justify-between xl:items-start pt-[2rem] gap-[2rem] relative z-10'>
                         {/* bawah */}
                         {/* kiri */}
                         <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="600" className='flex flex-col items-stretch justify-start border border-primary bg-white rounded-[0.938rem] p-[1.5rem] gap-[1.5rem] w-full xl:w-[50%]'>

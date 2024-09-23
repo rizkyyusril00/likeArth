@@ -158,7 +158,7 @@ export default function OurService(){
                                 </div>
                                 {/* kanan */}
                                 <a href="https://l.instagram.com/?u=https%3A%2F%2Fcalendly.com%2Flikearthstudio%2F15min&e=AT1pwBz33yjxE6M0Fhzvvf_9YRXkHTFHLvN9mLQXA5SN05Wq-C4K_pUQjGKpW_5MmUwjLwJFnluDDfrCM4g4GLmt8m9ZuDn_mqvvyQ" target="_blank" className='w-[100%] md:w-[40%] xl:w-[25%] flex justify-end items-center'>
-                                    <Btn title="Call Us Now" style="flex justify-center items-center bg-primary hover:bg-[#04525b] transition-all duration-500 ease-in-out border border-primary px-[3.75rem] py-[1rem] rounded-[0.75rem] relative overflow-hidden w-full font-bold"/>
+                                    <Btn title="Book a Call" style="flex justify-center items-center bg-primary hover:bg-[#04525b] transition-all duration-500 ease-in-out border border-primary px-[3.75rem] py-[1rem] rounded-[0.75rem] relative overflow-hidden w-full font-bold"/>
                                 </a>
                             </div>
                         </div>
