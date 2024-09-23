@@ -49,6 +49,7 @@ export default function Nav(){
                             {menus.map(menu => (
                                 <li key={menu.id} className='cursor-pointer'><Link to={menu.link} smooth={true} offset={-70} duration={500} className='text-primary text-[1.1rem] md:text-[1.8rem] font-semibold'>{menu.name}</Link></li>
                             ))}
+                            <a href="http://" target="_blank" className='border border-primary px-[1.5rem] py-[0.719rem] rounded-[0.75rem] bg-primary hover:bg-[#04525b] text-white text-[1.1rem] md:text-[1.8rem] transition-all duration-500 ease-in-out'>Contact Us</a>
                         </ul>
                     </div>
                 </div>

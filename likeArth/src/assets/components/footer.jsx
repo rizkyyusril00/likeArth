@@ -17,7 +17,7 @@ export default function Footer(){
     return (
         <>
             <footer className="footer">
-                <div className="footer-box bg-white py-[1.5rem] px-[2rem] flex flex-col md:flex-row items-center justify-center md:justify-between gap-[1rem] md:gap-0">
+                <div className="footer-box bg-white py-[1.5rem] px-[2rem] flex flex-col md:flex-row justify-center md:justify-between gap-[1rem] md:gap-0">
                     {/* kiri */}
                     <div className="flex flex-col items-center justify-center md:items-start md:justify-start gap-[1rem]">
                         {/* logo */}
@@ -36,9 +36,11 @@ export default function Footer(){
                         </div>
                     </div>
                     {/* kanan */}
-                    <div className='flex flex-col items-start justify-start md:items-end md:justify-end gap-[1rem]'>
-                        <h2 className='text-[1.1rem] md:text-[1.25rem] text-secondary text-start md:text-end'>Sukabumi City, West Java, Indonesia</h2>
-                        <h2 className='text-[1.1rem] md:text-[1.25rem] text-secondary text-start md:text-end'>Copyright 2024 Likearth Studio</h2>
+                    <div className='flex flex-col items-center  gap-[1rem]'>
+                        <div className='flex flex-col items-center gap-[1rem] justify-center xl:items-end xl:justify-end'>
+                            <h2 className='text-[1.1rem] md:text-[1.25rem] text-secondary text-start md:text-end'>Sukabumi City, West Java, Indonesia</h2>
+                            <h2 className='text-[1.1rem] md:text-[1.25rem] text-secondary text-start md:text-end'>Copyright 2024 Likearth Studio</h2>
+                        </div>
                     </div>
                 </div>
             </footer>
