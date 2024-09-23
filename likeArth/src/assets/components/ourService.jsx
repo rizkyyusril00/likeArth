@@ -60,7 +60,7 @@ export default function OurService(){
                                     <div className="flex flex-col items-start justify-start gap-[0.2rem] xl:gap-[0.5rem] text-secondary w-[60%] md:w-auto">
                                         <p className='text-[1rem] xl:text-[0.875rem]'>OUR SERVICES</p>
                                         <p className='font-bold text-[1.5rem] md:text-[2rem]'>UX Design</p>
-                                        <p className='text-[1.1rem] xl:text-[1rem] leading-[28px] text-[#676767]'>We ensure your design is intuitive, easy to use, and provides a delightful experience. </p>
+                                        <p className='text-[1rem] leading-[28px] text-[#676767]'>We ensure your design is intuitive, easy to use, and provides a delightful experience. </p>
                                     </div>
                                 </div>
                                 {/* bagian bawah */}
@@ -84,7 +84,7 @@ export default function OurService(){
                                     <div className="flex flex-col items-start justify-start gap-[0.5rem] text-secondary w-[60%] md:w-auto">
                                         <p className='text-[1rem] xl:text-[0.875rem]'>OUR SERVICES</p>
                                         <p className='font-bold text-[1.5rem] md:text-[2rem]'>UI Design</p>
-                                        <p className='text-[1.1rem] xl:text-[1rem] leading-[28px] text-[#676767]'>We craft captivating designs that catch your users' attention.</p>
+                                        <p className='text-[1rem] leading-[28px] text-[#676767]'>We craft captivating designs that catch your users' attention.</p>
                                     </div>
                                 </div>
                                 {/* bagian bawah */}
@@ -111,7 +111,7 @@ export default function OurService(){
                                     <div className="flex flex-col items-start justify-start gap-[0.5rem] text-secondary w-[60%] md:w-auto">
                                         <p className='text-[1rem] xl:text-[0.875rem]'>OUR SERVICES</p>
                                         <p className='font-bold text-[1.5rem] md:text-[2rem]'>Illustration Design</p>
-                                        <p className='text-[1.1rem] xl:text-[1rem] leading-[28px] text-[#676767]'>Let us turn your imagination into captivating illustrations.</p>
+                                        <p className='text-[1rem] leading-[28px] text-[#676767]'>Let us turn your imagination into captivating illustrations.</p>
                                     </div>
                                 </div>
                                 {/* bagian bawah */}
@@ -135,7 +135,7 @@ export default function OurService(){
                                     <div className="flex flex-col items-start justify-start gap-[0.5rem] text-secondary w-[60%] md:w-auto">
                                         <p className='text-[1rem] xl:text-[0.875rem]'>OUR SERVICES</p>
                                         <p className='font-bold text-[1.5rem] md:text-[2rem]'>Branding & Graphic Design</p>
-                                        <p className='text-[1.1rem] xl:text-[1rem] leading-[28px] text-[#676767]'>Make your brand more professional and memorable.</p>
+                                        <p className='text-[1rem] leading-[28px] text-[#676767]'>Make your brand more professional and memorable.</p>
                                     </div>
                                 </div>
                                 {/* bagian bawah */}

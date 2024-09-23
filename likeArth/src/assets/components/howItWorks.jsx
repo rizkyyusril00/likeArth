@@ -42,8 +42,8 @@ export default function HowItWorks(){
                                     <figure data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={vision.delay} className={vision.style}>
                                         <img src={vision.img} alt="" className='h-full w-full object-none'/>
                                     </figure>
-                                    <h3 data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={vision.delay} className='font-bold text-[1.5rem] md:text-[2rem] text-secondary text-center leading-[36px]'>{vision.title}</h3>
-                                    <p data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={vision.delay} className='text-[1.1rem] xl:text-[0.875rem] text-[#676767] text-center leading-[28px] w-[80%] md:w-[50%] xl:w-full'>{vision.desc}</p>
+                                    <h3 data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={vision.delay} className='font-bold text-[1.5rem] text-secondary text-center leading-[36px]'>{vision.title}</h3>
+                                    <p data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={vision.delay} className='text-[0.875rem] text-[#676767] text-center leading-[28px] w-[80%] md:w-[50%] xl:w-full'>{vision.desc}</p>
                                 </div>
                             ))}
                         </div>
@@ -54,8 +54,8 @@ export default function HowItWorks(){
                                     <figure data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={tab_1vision.delay} className={tab_1vision.style}>
                                         <img src={tab_1vision.img} alt="" className='h-full w-full object-cover'/>
                                     </figure>
-                                    <h3 data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={tab_1vision.delay} className='font-bold text-[1.5rem] md:text-[2rem] text-secondary text-center leading-[36px]'>{tab_1vision.title}</h3>
-                                    <p data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={tab_1vision.delay} className='text-[1.1rem] xl:text-[0.875rem] text-[#676767] text-center leading-[28px] w-full'>{tab_1vision.desc}</p>
+                                    <h3 data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={tab_1vision.delay} className='font-bold text-[1.5rem] text-secondary text-center leading-[36px]'>{tab_1vision.title}</h3>
+                                    <p data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={tab_1vision.delay} className='text-[0.875rem] text-[#676767] text-center leading-[28px] w-full'>{tab_1vision.desc}</p>
                                 </div>
                             ))}
                         </div>
@@ -66,8 +66,8 @@ export default function HowItWorks(){
                                     <figure data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={tab_2visions.delay} className={tab_2visions.style}>
                                         <img src={tab_2visions.img} alt="" className='h-full w-full object-cover'/>
                                     </figure>
-                                    <h3 data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={tab_2visions.delay} className='font-bold text-[1.5rem] md:text-[2rem] text-secondary text-center leading-[36px]'>{tab_2visions.title}</h3>
-                                    <p data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={tab_2visions.delay} className='text-[1.1rem] xl:text-[0.875rem] text-[#676767] text-center leading-[28px] w-full'>{tab_2visions.desc}</p>
+                                    <h3 data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={tab_2visions.delay} className='font-bold text-[1.5rem] text-secondary text-center leading-[36px]'>{tab_2visions.title}</h3>
+                                    <p data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={tab_2visions.delay} className='text-[0.875rem] text-[#676767] text-center leading-[28px] w-full'>{tab_2visions.desc}</p>
                                 </div>
                             ))}
                         </div>

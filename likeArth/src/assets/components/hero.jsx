@@ -35,7 +35,7 @@ export default function Hero() {
                                 <motion.span whileInView={{opacity: [0, 1] }} transition={{delay: 0.7, duration: 2, ease: "easeInOut" }} viewport={{ once: true }} >product?</motion.span>
                             </motion.h1>
                             {/* description */}
-                            <motion.p whileInView={{y: [25, 0], opacity: [0, 1] }} transition={{delay: 0.8, duration: 1.5, ease: "easeInOut" }} viewport={{ once: true }} className="text-primary text-[1.3rem] md:text-[1.5rem] xl:text-[1.125rem] text-center font-normal leading-[28px] xl:leading-[28px]">If you're looking to achieve your business goals through delightful experiences and engaging design, then you're in the right place.</motion.p>
+                            <motion.p whileInView={{y: [25, 0], opacity: [0, 1] }} transition={{delay: 0.8, duration: 1.5, ease: "easeInOut" }} viewport={{ once: true }} className="text-primary text-[1rem] text-center font-normal leading-[28px] xl:leading-[28px]">If you're looking to achieve your business goals through delightful experiences and engaging design, then you're in the right place.</motion.p>
                             {/* poins */}
                             <div className="hidden xl:flex items-center justify-center gap-[1.5rem]">
                                 {poins.map((poin, index) => (
@@ -62,9 +62,9 @@ export default function Hero() {
                                 <p className='py-[0.1rem] md:py-[0.6rem] leading-[28px] text-[0.7rem] md:text-[1.1rem]'><span className="text-primary">1 Slot available !</span> <span className='hidden md:inline-block text-[#676767]'>Let's talk</span> <span className='hidden xl:inline-block text-[#676767]'>to get your project started.</span></p>
                             </div>
                             {/* icon pulse */}
-                            <div className="absolute left-[0.75rem] flex items-center justify-center bg-primary bg-opacity-25  w-[1rem] h-[1rem] rounded-[50%] animate-scale-down-infinite">
+                            <div className="absolute left-[0.75rem] flex items-center justify-center bg-primary bg-opacity-25 w-[1rem] h-[1rem] rounded-[50%] animate-scale-down-infinite">
                             </div>
-                            <div className="w-[0.625rem] h-[0.625rem] bg-primary rounded-[50%] absolute left-[0.89rem]"></div>
+                            <div className="w-[0.625rem] h-[0.625rem] bg-primary rounded-[50%] absolute left-[0.90rem]"></div>
                             {/* btn */}
                             <a href="https://calendly.com/likearthstudio/15min" target="_blank">
                                 <Btn title="Book a Call" style="flex justify-center items-center relative bg-primary hover:bg-[#04525b] transition-all duration-500 ease-in-out text-white border border-primary overflow-hidden rounded-[0.938rem] py-[0.719rem] px-[1.5rem] absolute"/>                               

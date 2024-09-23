@@ -50,9 +50,9 @@ export default function Testimonials(){
                         </Marquee>
                     </div>
                     {/* komentar */}
-                    <div className='flex justify-center items-center gap-[2rem]'>
+                    <div className='flex flex-col md:flex-row justify-center gap-[2rem]'>
                         {/* 1 */}
-                        <div className='flex flex-row md:flex-col justify-normal xl:items-start gap-[2rem] w-[50%] relative z-10'>
+                        <div className='flex flex-col justify-start xl:items-start gap-[2rem] w-full md:w-[50%] relative z-10'>
                             {/* kiri */}
                             {/* atas */}
                             <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="200" className='flex flex-col items-stretch justify-start border border-primary bg-white rounded-[0.938rem] p-[1.5rem] gap-[1.5rem] w-full'>
@@ -92,7 +92,7 @@ export default function Testimonials(){
                             </div>                  
                         </div>
                         {/* 2 */}
-                        <div className='flex flex-row md:flex-col justify-normal xl:items-start pt-[2rem] gap-[2rem] relative z-10 w-[50%]'>
+                        <div className='flex flex-col justify-normal xl:items-start gap-[2rem] relative z-10 w-full md:w-[50%]'>
                             {/* kanan */}
                             {/* atas */}
                             <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="600" className='flex flex-col items-stretch justify-start border border-primary bg-white rounded-[0.938rem] p-[1.5rem] gap-[1.5rem] w-full'>
