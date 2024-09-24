@@ -48,7 +48,7 @@ export default function Hero() {
                             {/* description */}
                             <motion.p whileInView={{y: [25, 0], opacity: [0, 1] }} transition={{delay: 0.8, duration: 1.5, ease: "easeInOut" }} viewport={{ once: true }} className="text-primary text-[1rem] text-center font-normal leading-[28px] xl:leading-[28px]">If you're looking to achieve your business goals through delightful experiences and engaging design, then you're in the right place.</motion.p>
                             {/* poins */}
-                            <div className="hidden xl:flex items-center justify-center gap-[1.5rem]">
+                            <div className="hidden lg:flex items-center justify-center gap-[1.5rem]">
                                 {poins.map((poin, index) => (
                                     <motion.div  key={poin.id} whileInView={{y: [25, 0], opacity: [0, 1] }} transition={{delay: delay + index * 0.1, duration: 1.5, ease: "easeInOut" }} viewport={{ once: true }} className='flex items-center justify-center gap-[0.5rem]'>
                                         <i className="bi bi-check-circle text-primary text-[1rem]"></i>
@@ -57,13 +57,13 @@ export default function Hero() {
                                 ))}
                             </div>
                             {/* mobile poins */}
-                            <motion.div whileInView={{y: [25, 0], opacity: [0, 1] }} transition={{delay: 0.8, duration: 1.5, ease: "easeInOut" }} viewport={{ once: true }} className='flex justify-center items-center gap-[0.5rem] xl:hidden'>
+                            <motion.div whileInView={{y: [25, 0], opacity: [0, 1] }} transition={{delay: 0.8, duration: 1.5, ease: "easeInOut" }} viewport={{ once: true }} className='flex justify-center items-center gap-[0.5rem] lg:hidden'>
                                 <i className="bi bi-check-circle text-primary text-[1rem]"></i>
-                                <p className="text-[1rem] md:text-[1.4rem] text-[#676767] text-center">{Poins}</p>
+                                <p className="text-[1rem] text-[#676767] text-center">{Poins}</p>
                             </motion.div>
                         </div>
                         {/* contact us */}
-                        <div className="px-7 sm:px-14 md:px-[165px] lg:px-[280px] xl:px-[250px] container mx-auto max-w-[1120px] flex items-center justify-center">
+                        <div className="px-7 sm:px-[58px] md:px-[165px] lg:px-[280px] xl:px-[270px] container mx-auto max-w-[1120px] flex items-center justify-center">
                             <motion.div whileInView={{width: widthAnimation}} transition={{delay: 1.5, duration: 1.5, ease: "easeInOut" }} viewport={{ once: true }} className="bg-white rounded-[0.938rem] pl-[17px] py-1 xl:py-0 justify-between items-center flex relative z-10">
                                 {/* invisible place holder */}
                                 <p className='invisible py-[0.1rem] md:py-[0.6rem] leading-[28px]'>1</p>
@@ -72,7 +72,7 @@ export default function Hero() {
                                     <div className="invisible flex items-center justify-center bg-red-500 w-[1rem] h-[1rem] rounded-[50%] isolate">
                                         <div className="w-[0.625rem] h-[0.625rem] bg-primary rounded-[50%]"></div>
                                     </div>
-                                    <p className='py-[0.1rem] md:py-[0.6rem] text-[0.875rem] leading-[28px]'><span className="text-primary">1 Slot available!</span> <span className='hidden md:inline-block text-[#676767]'>Let's talk</span> <span className='hidden xl:inline-block text-[#676767]'>to get your project started.</span></p>
+                                    <p className=' text-[0.875rem] leading-[28px]'><span className="text-primary">1 Slot available!</span> <span className='hidden md:inline-block text-[#676767]'>Let's talk</span> <span className='hidden xl:inline-block text-[#676767]'>to get your project started.</span></p>
                                 </motion.div>
                                 {/* icon pulse */}
                                 <div className="absolute left-[17px] flex items-center justify-center bg-primary bg-opacity-25 w-[1rem] h-[1rem] rounded-[50%] animate-scale-down-infinite">

@@ -40,16 +40,16 @@ export default function FooterHero(){
                         {/* poins */}
                         <div className="flex items-center justify-center gap-[1.5rem]">
                             {poins.map(poin => (
-                                <div key={poin.id} className='hidden xl:flex items-center justify-center gap-[0.5rem]'>
+                                <div key={poin.id} className='hidden lg:flex items-center justify-center gap-[0.5rem]'>
                                     <i data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={poin.delay} className="bi bi-check-circle text-primary text-[1rem]"></i>
                                     <p data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay={poin.delay} className="text-[1rem] text-[#676767] text-center">{poin.name}</p>
                                 </div>
                             ))}
                         </div>
                          {/* mobile poins */}
-                            <div className='flex justify-center items-center gap-[0.5rem] xl:hidden'>
+                            <div className='flex justify-center items-center gap-[0.5rem] lg:hidden'>
                                 <i className="bi bi-check-circle text-primary text-[1rem]"></i>
-                                <p className="text-[1rem] md:text-[1.4rem] text-[#676767] text-center">{Poins}</p>
+                                <p className="text-[1rem] text-[#676767] text-center">{Poins}</p>
                             </div>
                         {/* contact us */}
                         <div className="px-7 sm:px-14 md:px-[165px] lg:px-[280px] xl:px-[250px] container mx-auto max-w-[1120px] flex items-center justify-center">
@@ -61,7 +61,7 @@ export default function FooterHero(){
                                     <div className="invisible flex items-center justify-center bg-red-500 w-[1rem] h-[1rem] rounded-[50%] isolate">
                                         <div className="w-[0.625rem] h-[0.625rem] bg-primary rounded-[50%]"></div>
                                     </div>
-                                    <p className='py-[0.1rem] md:py-[0.6rem] text-[0.875rem] leading-[28px]'><span className="text-primary">1 Slot available!</span> <span className='hidden md:inline-block text-[#676767]'>Let's talk</span> <span className='hidden xl:inline-block text-[#676767]'>to get your project started.</span></p>
+                                    <p className=' text-[0.875rem] leading-[28px]'><span className="text-primary">1 Slot available!</span> <span className='hidden md:inline-block text-[#676767]'>Let's talk</span> <span className='hidden xl:inline-block text-[#676767]'>to get your project started.</span></p>
                                 </motion.div>
                                 {/* icon pulse */}
                                 <div className="absolute left-[17px] flex items-center justify-center bg-primary bg-opacity-25 w-[1rem] h-[1rem] rounded-[50%] animate-scale-down-infinite">
