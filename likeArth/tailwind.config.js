@@ -5,6 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      sm: '400px',
+      md: '768px', // Diubah menjadi 768px
+      lg: '1024px',
+      xl: '1280px',
+    },
     extend: {
       animation: {
         'scale-down-infinite': 'scale-down 1s ease-in-out infinite',

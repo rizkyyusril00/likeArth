@@ -20,10 +20,10 @@ export default function Hero() {
         { id: 3, name: 'Unlimited design requests & revisions', }
     ];
     // slider animation framer
-    const [isLargeDevice, setIsLargeDevice] = useState(window.innerWidth > 800);
+    const [isLargeDevice, setIsLargeDevice] = useState(window.innerWidth > 768);
 
     useEffect(() => {
-        const handleResize = () => setIsLargeDevice(window.innerWidth > 800);
+        const handleResize = () => setIsLargeDevice(window.innerWidth > 768);
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
     }, []);
@@ -63,7 +63,7 @@ export default function Hero() {
                             </motion.div>
                         </div>
                         {/* contact us */}
-                        <div className="px-7 md:px-40 xl:px-[250px] container mx-auto max-w-[1120px] flex items-center justify-center">
+                        <div className="px-7 sm:px-14 md:px-[165px] lg:px-[280px] xl:px-[250px] container mx-auto max-w-[1120px] flex items-center justify-center">
                             <motion.div whileInView={{width: widthAnimation}} transition={{delay: 1.5, duration: 1.5, ease: "easeInOut" }} viewport={{ once: true }} className="bg-white rounded-[0.938rem] pl-[17px] py-1 xl:py-0 justify-between items-center flex relative z-10">
                                 {/* invisible place holder */}
                                 <p className='invisible py-[0.1rem] md:py-[0.6rem] leading-[28px]'>1</p>
@@ -78,7 +78,7 @@ export default function Hero() {
                                 <div className="absolute left-[17px] flex items-center justify-center bg-primary bg-opacity-25 w-[1rem] h-[1rem] rounded-[50%] animate-scale-down-infinite">
                                 </div>
                                 <div className="w-[0.625rem] h-[0.625rem] bg-primary rounded-[50%] absolute left-[20px]"></div>
-                                <motion.a href="https://cal.com/likearthstudio/30min" target='_blank' className='py-[10px] md:py-[14px] xl:py-[13px] w-[100px] md:w-[170px] text-center text-white text-[0.875rem] bg-primary hover:bg-[#04525b] transition-all duration-500 ease-in-out rounded-[0.938rem] absolute right-0'>Book a Call</motion.a>
+                                <motion.a href="https://cal.com/likearthstudio/30min" target='_blank' className='py-[10px] md:py-[17px] xl:py-[13px] w-[100px] md:w-[170px] text-center text-white text-[0.875rem] bg-primary hover:bg-[#04525b] transition-all duration-500 ease-in-out rounded-[0.938rem] absolute right-0'>Book a Call</motion.a>
                             </motion.div>
                         </div>
                     </div>
