@@ -52,7 +52,7 @@ export default function FooterHero(){
                                 <p className="text-[1rem] text-[#676767] text-center">{Poins}</p>
                             </div>
                         {/* contact us */}
-                        <div className="px-7 sm:px-14 md:px-[165px] lg:px-[280px] xl:px-[250px] container mx-auto max-w-[1120px] flex items-center justify-center">
+                        <div className="px-7 sm:px-[58px] md:px-[165px] lg:px-[280px] xl:px-[270px] container mx-auto max-w-[1120px] flex items-center justify-center">
                             <motion.div whileInView={{width: widthAnimation}} transition={{delay: 1.5, duration: 1.5, ease: "easeInOut" }} viewport={{ once: true }} className="bg-white rounded-[0.938rem] pl-[17px] py-1 xl:py-0 justify-between items-center flex relative z-10">
                                 {/* invisible place holder */}
                                 <p className='invisible py-[0.1rem] md:py-[0.6rem] leading-[28px]'>1</p>
