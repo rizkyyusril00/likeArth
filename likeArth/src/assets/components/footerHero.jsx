@@ -47,10 +47,10 @@ export default function FooterHero(){
                             ))}
                         </div>
                          {/* mobile poins */}
-                            <div className='flex justify-center items-center gap-[0.5rem] lg:hidden'>
-                                <i className="bi bi-check-circle text-primary text-[1rem]"></i>
-                                <p className="text-[1rem] text-[#676767] text-center">{Poins}</p>
-                            </div>
+                        <div className='flex justify-center items-center gap-[0.5rem] lg:hidden'>
+                            <i className="bi bi-check-circle text-primary text-[1rem]"></i>
+                            <p className="text-[1rem] text-[#676767] text-center">{Poins}</p>
+                        </div>
                         {/* contact us */}
                         <div className="px-7 sm:px-[58px] md:px-[165px] lg:px-[280px] xl:px-[270px] container mx-auto max-w-[1120px] flex items-center justify-center">
                             <motion.div whileInView={{width: widthAnimation}} transition={{delay: 1.5, duration: 1.5, ease: "easeInOut" }} viewport={{ once: true }} className="bg-white rounded-[0.938rem] pl-[17px] py-1 xl:py-0 justify-between items-center flex relative z-10">
