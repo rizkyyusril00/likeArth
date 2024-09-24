@@ -1,8 +1,13 @@
-import Whyus1 from '../img/whyus1.png'
-import Whyus2 from '../img/whyus2.png'
-import Whyus3 from '../img/whyus3.png'
+// import Whyus1 from '../img/whyus1.png'
+// import Whyus2 from '../img/whyus2.png'
+// import Whyus3 from '../img/whyus3.png'
 import Awan1 from '../img/awan1.png'
 import Awan2 from '../img/awan2.png'
+import Whyus1 from '../img/why_us/whyus1.svg'
+import Whyus2 from '../img/why_us/whyus2.svg'
+import Whyus3 from '../img/why_us/whyus3.svg'
+
+
 
 
 export default function WhyUs(){

@@ -1,4 +1,5 @@
-import FaqImg from '../img/faq.png'
+// import FaqImg from '../img/faq.png'
+import FaqImg from '../img/faq/faq.svg'
 import BlueGrad from '../img/faq_blueGrad.png'
 import Accordion from '../components/accordion'
 

@@ -1,7 +1,11 @@
-import Service1 from '../img/service1.png'
-import Service2 from '../img/service2.png'
-import Service3 from '../img/service3.png'
-import Service4 from '../img/service4.png'
+// import Service1 from '../img/service1.png'
+// import Service2 from '../img/service2.png'
+// import Service3 from '../img/service3.png'
+// import Service4 from '../img/service4.png'
+import Service1 from '../img/our_service/service1.svg'
+import Service2 from '../img/our_service/service2.svg'
+import Service3 from '../img/our_service/service3.svg'
+import Service4 from '../img/our_service/service4.svg'
 import Btn from './btn'
 
 
@@ -157,7 +161,7 @@ export default function OurService(){
                                     <p className='text-[1.125rem] text-[#676767]'>We haven’t listed everything here. Let us know what you need, and we’ll deliver the best services tailored just for you.</p>
                                 </div>
                                 {/* kanan */}
-                                <a href="https://calendly.com/likearthstudio/15min" target="_blank" className='w-[100%] md:w-[40%] xl:w-[25%] flex justify-end items-center'>
+                                <a href="https://cal.com/likearthstudio/30min" target="_blank" className='w-[100%] md:w-[40%] xl:w-[25%] flex justify-end items-center'>
                                     <Btn title="Book a Call" style="flex justify-center items-center bg-primary hover:bg-[#04525b] transition-all duration-500 ease-in-out border border-primary px-[3.75rem] py-[1rem] rounded-[0.75rem] relative overflow-hidden w-full"/>
                                 </a>
                             </div>
