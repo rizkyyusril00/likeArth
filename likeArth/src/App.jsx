@@ -14,8 +14,7 @@ function App() {
   return (
     <>
       <Nav />
-      {/* <Hero /> */}
-      <FooterHero />
+      <Hero />
       <WhyUs />
       <OurService />
       <HowItWorks />

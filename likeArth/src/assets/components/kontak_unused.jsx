@@ -23,7 +23,7 @@ export default function KontakUnsued(){
                                     <Btn title="Book a Call" style="flex justify-center items-center relative bg-primary hover:bg-[#04525b] transition-all duration-500 ease-in-out text-white border border-primary overflow-hidden rounded-[0.938rem] py-[0.719rem] px-[1.5rem] absolute"/>                               
                                 </a>
                             </motion.div>
-                        </div>
+            </div>
         </>
     )
 }
