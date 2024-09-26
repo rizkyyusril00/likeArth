@@ -63,11 +63,11 @@ export default function Testimonials(){
                                     {/* pp */}
                                     {/* <div className='w-[3.125rem] h-[3.125rem] rounded-[50%] bg-primary'></div> */}
                                     <div className='flex flex-col items-start justify-start'>
-                                        <p className='text-start text-[1.2rem] xl:text-[1rem] font-bold'>Ricky</p>
+                                        <p className='text-start text-[1rem] font-bold'>Ricky</p>
                                         <div className='flex items-center justify-center gap-[0.5rem]'>
-                                            <p className='text-[1.1rem] xl:text-[0.875rem] text-[#4A4A4A]'>CEO</p>
+                                            <p className='text-[0.875rem] text-[#4A4A4A]'>CEO</p>
                                             <div className='w-[0.5rem] h-[0.5rem] rounded-[50%] bg-[#D9D9D9]'></div>
-                                            <p className='text-[1.1rem] xl:text-[0.875rem] text-[#4A4A4A]'>Ravenry</p>
+                                            <p className='text-[0.875rem] text-[#4A4A4A]'>Ravenry</p>
                                         </div>
                                     </div>
                                 </div>
@@ -81,11 +81,11 @@ export default function Testimonials(){
                                     {/* pp */}
                                     {/* <div className='w-[3.125rem] h-[3.125rem] rounded-[50%] bg-primary'></div> */}
                                     <div className='flex flex-col items-start justify-start'>
-                                        <p className='text-start text-[1.2rem] xl:text-[1rem] font-bold'>Chelly</p>
+                                        <p className='text-start text-[1rem] font-bold'>Chelly</p>
                                         <div className='flex items-center justify-center gap-[0.5rem]'>
-                                            <p className='text-[1.1rem] xl:text-[0.875rem] text-[#4A4A4A]'>CEO </p>
+                                            <p className='text-[0.875rem] text-[#4A4A4A]'>CEO </p>
                                             <div className='w-[0.5rem] h-[0.5rem] rounded-[50%] bg-[#D9D9D9]'></div>
-                                            <p className='text-[1.1rem] xl:text-[0.875rem] text-[#4A4A4A]'>Tukangsayur</p>
+                                            <p className='text-[0.875rem] text-[#4A4A4A]'>Tukangsayur</p>
                                         </div>
                                     </div>
                                 </div>
@@ -103,11 +103,11 @@ export default function Testimonials(){
                                     {/* pp */}
                                     {/* <div className='w-[3.125rem] h-[3.125rem] rounded-[50%] bg-primary'></div> */}
                                     <div className='flex flex-col items-start justify-start'>
-                                        <p className='text-start text-[1.2rem] xl:text-[1rem] font-bold'>Michael</p>
+                                        <p className='text-start text-[1rem] font-bold'>Michael</p>
                                         <div className='flex items-center justify-center gap-[0.5rem]'>
-                                            <p className='text-[1.1rem] xl:text-[0.875rem] text-[#4A4A4A]'>Head of Business</p>
+                                            <p className='text-[0.875rem] text-[#4A4A4A]'>Head of Business</p>
                                             <div className='w-[0.5rem] h-[0.5rem] rounded-[50%] bg-[#D9D9D9]'></div>
-                                            <p className='text-[1.1rem] xl:text-[0.875rem] text-[#4A4A4A]'>Shipper</p>
+                                            <p className='text-[0.875rem] text-[#4A4A4A]'>Shipper</p>
                                         </div>
                                     </div>
                                 </div>
@@ -121,11 +121,11 @@ export default function Testimonials(){
                                     {/* pp */}
                                     {/* <div className='w-[3.125rem] h-[3.125rem] rounded-[50%] bg-primary'></div> */}
                                     <div className='flex flex-col items-start justify-start'>
-                                        <p className='text-start text-[1.2rem] xl:text-[1rem] font-bold'>Fahmi</p>
+                                        <p className='text-start text-[1rem] font-bold'>Fahmi</p>
                                         <div className='flex items-center justify-center gap-[0.5rem]'>
-                                            <p className='text-[1.1rem] xl:text-[0.875rem] text-[#4A4A4A]'>Director</p>
+                                            <p className='text-[0.875rem] text-[#4A4A4A]'>Director</p>
                                             <div className='w-[0.5rem] h-[0.5rem] rounded-[50%] bg-[#D9D9D9]'></div>
-                                            <p className='text-[1.1rem] xl:text-[0.875rem] text-[#4A4A4A]'>KNKS</p>
+                                            <p className='text-[0.875rem] text-[#4A4A4A]'>KNKS</p>
                                         </div>
                                     </div>
                                 </div>
