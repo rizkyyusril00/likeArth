@@ -36,7 +36,7 @@ export default function Hero() {
                     <div className="hero-box flex flex-col items-center justify-center gap-[1rem]">
                         <div className="flex flex-col items-center justify-center gap-[1.5rem] md:gap-[1rem]">
                             {/* tagline */}
-                            <motion.h1 className="text-primary text-[2.5rem] md:text-[3.5rem] xl:text-[4rem] leading-tight xl:leading-[72px] text-center font-bold">
+                            <motion.h1 className="text-primary text-[35px] md:text-[3.5rem] xl:text-[4rem] leading-tight xl:leading-[72px] text-center font-bold">
                                 <motion.span whileInView={{opacity: [0, 1] }} transition={{delay: 0.1, duration: 2, ease: "easeInOut" }} viewport={{ once: true }} >Ready </motion.span>
                                 <motion.span whileInView={{opacity: [0, 1] }} transition={{delay: 0.2, duration: 2, ease: "easeInOut" }} viewport={{ once: true }} >to </motion.span>
                                 <motion.span whileInView={{opacity: [0, 1] }} transition={{delay: 0.3, duration: 2, ease: "easeInOut" }} viewport={{ once: true }} >design </motion.span>
