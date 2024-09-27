@@ -67,7 +67,7 @@ export default function Hero() {
                             <motion.div whileInView={{width: widthAnimation}} transition={{delay: 2.4, duration: 1.5, ease: "easeInOut" }} viewport={{ once: true }} className="bg-white rounded-[0.938rem] pl-[17px] py-1 xl:py-0 justify-between items-center flex relative z-10 overflow-hidden">
                                 {/* invisible place holder */}
                                 <p className='invisible py-[0.1rem] md:py-[0.6rem] leading-[28px]'>1</p>
-                                <motion.div whileInView={{opacity: [0, 1]}} transition={{delay: 2.8, duration: 1, ease: "easeInOut" }} viewport={{ once: true }} className='flex items-center justify-center absolute left-[17px] gap-[10px]'>
+                                <motion.div whileInView={{opacity: [0, 1]}} transition={{delay: 3, duration: 1, ease: "easeInOut" }} viewport={{ once: true }} className='flex items-center justify-center absolute left-[17px] gap-[10px]'>
                                     {/* icon pulse invisible placeholder*/}
                                     <div className="invisible flex items-center justify-center bg-red-500 w-[1rem] h-[1rem] rounded-[50%] isolate">
                                         <div className="w-[0.625rem] h-[0.625rem] bg-primary rounded-[50%]"></div>
