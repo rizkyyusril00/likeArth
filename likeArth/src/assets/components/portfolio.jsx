@@ -1,18 +1,18 @@
 import Marquee from "react-fast-marquee";
 import Ft1 from "../img/icon2/ft1.svg";
 // import FigmaLogo from "../img/figmaLogo.svg";
-import Portfolio1 from "../img/portfolio/portfolio1.svg";
-import Portfolio2 from "../img/portfolio/portfolio2.svg";
-import Portfolio3 from "../img/portfolio/portfolio3.svg";
-import Portfolio4 from "../img/portfolio/portfolio4.svg";
-import Portfolio5 from "../img/portfolio/portfolio5.svg";
-import Portfolio6 from "../img/portfolio/portfolio6.svg";
-import Portfolio_Second1 from "../img/portfolio/portfolio_second 1.svg";
-import Portfolio_Second2 from "../img/portfolio/portfolio_second 2.svg";
-import Portfolio_Second3 from "../img/portfolio/portfolio_second 3.svg";
-import Portfolio_Second4 from "../img/portfolio/portfolio_second 4.svg";
-import Portfolio_Second5 from "../img/portfolio/portfolio_second 5.svg";
-import Portfolio_Second6 from "../img/portfolio/portfolio_second 6.svg";
+import Portfolio1 from "../img/portfolio/portfolio1.png";
+import Portfolio2 from "../img/portfolio/portfolio2.png";
+import Portfolio3 from "../img/portfolio/portfolio3.png";
+import Portfolio4 from "../img/portfolio/portfolio4.png";
+import Portfolio5 from "../img/portfolio/portfolio5.png";
+import Portfolio6 from "../img/portfolio/portfolio6.png";
+import Portfolio_Second1 from "../img/portfolio/portfolio_second 1.png";
+import Portfolio_Second2 from "../img/portfolio/portfolio_second 2.png";
+import Portfolio_Second3 from "../img/portfolio/portfolio_second 3.png";
+import Portfolio_Second4 from "../img/portfolio/portfolio_second 4.png";
+import Portfolio_Second5 from "../img/portfolio/portfolio_second 5.png";
+import Portfolio_Second6 from "../img/portfolio/portfolio_second 6.png";
 
 export default function Portfolio() {
   const portfolios = [
@@ -40,10 +40,6 @@ export default function Portfolio() {
       id: 6,
       img: Portfolio6,
     },
-    {
-      id: 7,
-      img: Portfolio1,
-    },
   ];
   const portfolios_second = [
     {
@@ -69,10 +65,6 @@ export default function Portfolio() {
     {
       id: 6,
       img: Portfolio_Second6,
-    },
-    {
-      id: 7,
-      img: Portfolio_Second1,
     },
   ];
   return (
