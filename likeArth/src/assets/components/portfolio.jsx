@@ -18,7 +18,7 @@ export default function Portfolio() {
   const portfolios = [
     {
       id: 1,
-      img: Portfolio1,
+      img: Portfolio3,
     },
     {
       id: 2,
@@ -26,7 +26,7 @@ export default function Portfolio() {
     },
     {
       id: 3,
-      img: Portfolio3,
+      img: Portfolio1,
     },
     {
       id: 4,
