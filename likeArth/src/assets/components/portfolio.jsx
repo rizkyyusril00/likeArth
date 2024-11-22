@@ -1,8 +1,72 @@
 import Marquee from "react-fast-marquee";
 import ThumbnailPortfolio from "../img/hero.png";
 import FigmaLogo from "../img/figmaLogo.svg";
+import Portfolio1 from "../img/portfolio/portfolio1.svg";
+import Portfolio2 from "../img/portfolio/portfolio2.svg";
+import Portfolio3 from "../img/portfolio/portfolio3.svg";
+import Portfolio4 from "../img/portfolio/portfolio4.svg";
+import Portfolio5 from "../img/portfolio/portfolio5.svg";
+import Portfolio6 from "../img/portfolio/portfolio6.svg";
+import Portfolio_Second1 from "../img/portfolio/portfolio_second 1.svg";
+import Portfolio_Second2 from "../img/portfolio/portfolio_second 2.svg";
+import Portfolio_Second3 from "../img/portfolio/portfolio_second 3.svg";
+import Portfolio_Second4 from "../img/portfolio/portfolio_second 4.svg";
+import Portfolio_Second5 from "../img/portfolio/portfolio_second 5.svg";
+import Portfolio_Second6 from "../img/portfolio/portfolio_second 6.svg";
 
 export default function Portfolio() {
+  const portfolios = [
+    {
+      id: 1,
+      img: Portfolio1,
+    },
+    {
+      id: 2,
+      img: Portfolio2,
+    },
+    {
+      id: 3,
+      img: Portfolio3,
+    },
+    {
+      id: 4,
+      img: Portfolio4,
+    },
+    {
+      id: 5,
+      img: Portfolio5,
+    },
+    {
+      id: 6,
+      img: Portfolio6,
+    },
+  ];
+  const portfolios_second = [
+    {
+      id: 1,
+      img: Portfolio_Second1,
+    },
+    {
+      id: 2,
+      img: Portfolio_Second2,
+    },
+    {
+      id: 3,
+      img: Portfolio_Second3,
+    },
+    {
+      id: 4,
+      img: Portfolio_Second4,
+    },
+    {
+      id: 5,
+      img: Portfolio_Second5,
+    },
+    {
+      id: 6,
+      img: Portfolio_Second6,
+    },
+  ];
   return (
     <>
       <div className="portfolio pt-[16px]">
@@ -13,48 +77,32 @@ export default function Portfolio() {
           {/* atas */}
           <Marquee
             loop={0}
-            speed={20}
+            speed={25}
             autoFill
             gradientColor="white"
             gradientWidth={50}
             className="flex gap-4"
           >
             <div className="flex gap-4">
-              <figure className="w-[550px] h-[300px] bg-black rounded-[12px]">
-                <img
-                  src={ThumbnailPortfolio}
-                  alt=""
-                  className="w-full h-full object-cover rounded-[12px]"
-                />
-              </figure>
-              <figure className="w-[550px] h-[300px] bg-black rounded-[12px]">
-                <img
-                  src={ThumbnailPortfolio}
-                  alt=""
-                  className="w-full h-full object-cover rounded-[12px]"
-                />
-              </figure>
-              <figure className="w-[550px] h-[300px] bg-black rounded-[12px]">
-                <img
-                  src={ThumbnailPortfolio}
-                  alt=""
-                  className="w-full h-full object-cover rounded-[12px]"
-                />
-              </figure>
-              <figure className="w-[550px] h-[300px] bg-black rounded-[12px]">
-                <img
-                  src={ThumbnailPortfolio}
-                  alt=""
-                  className="w-full h-full object-cover rounded-[12px]"
-                />
-              </figure>
+              {portfolios.map((portfolio) => (
+                <figure
+                  key={portfolio.id}
+                  className="w-[550px] h-[400px] rounded-[12px]"
+                >
+                  <img
+                    src={portfolio.img}
+                    alt=""
+                    className="w-full h-full object-cover rounded-[12px]"
+                  />
+                </figure>
+              ))}
             </div>
           </Marquee>
 
           {/* bawah */}
           <Marquee
             loop={0}
-            speed={20}
+            speed={25}
             direction="right"
             autoFill
             gradientColor="white"
@@ -62,34 +110,18 @@ export default function Portfolio() {
             className="flex gap-4"
           >
             <div className="flex gap-4">
-              <figure className="w-[550px] h-[300px] bg-black rounded-[12px]">
-                <img
-                  src={ThumbnailPortfolio}
-                  alt=""
-                  className="w-full h-full object-cover rounded-[12px]"
-                />
-              </figure>
-              <figure className="w-[550px] h-[300px] bg-black rounded-[12px]">
-                <img
-                  src={ThumbnailPortfolio}
-                  alt=""
-                  className="w-full h-full object-cover rounded-[12px]"
-                />
-              </figure>
-              <figure className="w-[550px] h-[300px] bg-black rounded-[12px]">
-                <img
-                  src={ThumbnailPortfolio}
-                  alt=""
-                  className="w-full h-full object-cover rounded-[12px]"
-                />
-              </figure>
-              <figure className="w-[550px] h-[300px] bg-black rounded-[12px]">
-                <img
-                  src={ThumbnailPortfolio}
-                  alt=""
-                  className="w-full h-full object-cover rounded-[12px]"
-                />
-              </figure>
+              {portfolios_second.map((portfolio) => (
+                <figure
+                  key={portfolio.id}
+                  className="w-[550px] h-[400px] rounded-[12px]"
+                >
+                  <img
+                    src={portfolio.img}
+                    alt=""
+                    className="w-full h-full object-cover rounded-[12px]"
+                  />
+                </figure>
+              ))}
             </div>
           </Marquee>
 
