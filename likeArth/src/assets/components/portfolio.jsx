@@ -134,13 +134,13 @@ export default function Portfolio() {
           </Marquee>
 
           {/* Tombol See More */}
-          <button
+          <a
             href="https://dribbble.com/likearth"
             className="p-4 flex items-center justify-center gap-2 bg-white bg-opacity-50 filter backdrop-filter backdrop-blur-xl w-[170px] rounded-[12px] shadow-md absolute bottom-0 left-[50%] translate-x-[-50%] translate-y-[-50%] z-20 overflow-hidden hover:scale-105 transition-all ease-in-out duration-500"
           >
             <img src={Ft1} alt="" className="w-[30px] h-[30px]" />
             <span className="font-medium text-[16px]">See Portfolio</span>
-          </button>
+          </a>
         </div>
       </div>
     </>
