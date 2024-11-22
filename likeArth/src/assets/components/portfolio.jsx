@@ -1,6 +1,6 @@
 import Marquee from "react-fast-marquee";
-import ThumbnailPortfolio from "../img/hero.png";
-import FigmaLogo from "../img/figmaLogo.svg";
+import Ft1 from "../img/icon2/ft1.svg";
+// import FigmaLogo from "../img/figmaLogo.svg";
 import Portfolio1 from "../img/portfolio/portfolio1.svg";
 import Portfolio2 from "../img/portfolio/portfolio2.svg";
 import Portfolio3 from "../img/portfolio/portfolio3.svg";
@@ -40,6 +40,10 @@ export default function Portfolio() {
       id: 6,
       img: Portfolio6,
     },
+    {
+      id: 7,
+      img: Portfolio1,
+    },
   ];
   const portfolios_second = [
     {
@@ -66,6 +70,10 @@ export default function Portfolio() {
       id: 6,
       img: Portfolio_Second6,
     },
+    {
+      id: 7,
+      img: Portfolio_Second1,
+    },
   ];
   return (
     <>
@@ -87,7 +95,7 @@ export default function Portfolio() {
               {portfolios.map((portfolio) => (
                 <figure
                   key={portfolio.id}
-                  className="w-[550px] h-[400px] rounded-[12px]"
+                  className="w-[400px] h-[300px] md:w-[550px] md:h-[380px] rounded-[12px]"
                 >
                   <img
                     src={portfolio.img}
@@ -113,7 +121,7 @@ export default function Portfolio() {
               {portfolios_second.map((portfolio) => (
                 <figure
                   key={portfolio.id}
-                  className="w-[550px] h-[400px] rounded-[12px]"
+                  className="w-[400px] h-[300px] md:w-[550px] md:h-[380px] rounded-[12px]"
                 >
                   <img
                     src={portfolio.img}
@@ -127,8 +135,8 @@ export default function Portfolio() {
 
           {/* Tombol See More */}
           <button className="p-4 flex items-center justify-center gap-2 bg-white bg-opacity-50 filter backdrop-filter backdrop-blur-xl w-[170px] rounded-[12px] shadow-md absolute bottom-0 left-[50%] translate-x-[-50%] translate-y-[-50%] z-20 overflow-hidden hover:scale-105 transition-all ease-in-out duration-500">
+            <img src={Ft1} alt="" className="w-[30px] h-[30px]" />
             <span className="font-medium text-[16px]">See Portfolio</span>
-            <img src={FigmaLogo} alt="" className="w-4 h-4" />
           </button>
         </div>
       </div>

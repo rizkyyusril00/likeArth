@@ -1,9 +1,9 @@
 import Logo2 from "../img/logo2.png";
-import Ft1 from "../img/icon2/ft1.png";
-import Ft2 from "../img/icon2/ft2.png";
-import Ft3 from "../img/icon2/ft3.png";
-import Ft4 from "../img/icon2/ft4.png";
-import Ft5 from "../img/icon2/ft5.png";
+import Ft1 from "../img/icon2/ft1.svg";
+import Ft2 from "../img/icon2/ft2.svg";
+import Ft3 from "../img/icon2/ft3.svg";
+import Ft4 from "../img/icon2/ft4.svg";
+// import Ft5 from "../img/icon2/ft5.png";
 
 export default function Footer() {
   const ft_icons = [
@@ -15,7 +15,7 @@ export default function Footer() {
       icon: Ft4,
       link: "https://www.linkedin.com/company/likearth-studio/",
     },
-    { id: 5, icon: Ft5, link: "#" },
+    // { id: 5, icon: Ft5, link: "#" },
   ];
   return (
     <>
