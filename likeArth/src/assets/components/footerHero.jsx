@@ -131,7 +131,7 @@ export default function FooterHero() {
                   target="_blank"
                   className="py-[10px] md:py-[17px] xl:py-[13px] w-[100px] md:w-[160px] text-center text-white text-[0.875rem] bg-primary hover:bg-[#04525b] transition-all duration-500 ease-in-out rounded-[0.938rem] absolute right-0"
                 >
-                  Book a <Call></Call>
+                  Book a Call
                 </motion.a>
               </motion.div>
             </div>
