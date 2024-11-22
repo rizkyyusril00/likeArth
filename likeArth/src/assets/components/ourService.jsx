@@ -283,12 +283,12 @@ export default function OurService() {
                 </div>
                 {/* kanan */}
                 <a
-                  href="https://wa.me/+2348123456789"
+                  href="https://cal.com/likearthstudio/30min"
                   target="_blank"
                   className="w-[100%] md:w-[40%] xl:w-[25%] flex justify-end items-center"
                 >
                   <Btn
-                    title="Contact Us"
+                    title="Book a Call"
                     style="flex justify-center items-center bg-primary hover:bg-[#04525b] transition-all duration-500 ease-in-out border border-primary px-[3.75rem] py-[1rem] rounded-[0.75rem] relative overflow-hidden w-full"
                   />
                 </a>

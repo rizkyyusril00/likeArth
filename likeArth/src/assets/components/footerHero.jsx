@@ -127,11 +127,11 @@ export default function FooterHero() {
                 <div className="absolute left-[17px] flex items-center justify-center bg-primary bg-opacity-25 w-[1rem] h-[1rem] rounded-[50%] animate-scale-down-infinite"></div>
                 <div className="w-[0.625rem] h-[0.625rem] bg-primary rounded-[50%] absolute left-[20px]"></div>
                 <motion.a
-                  href="https://wa.me/+2348123456789"
+                  href="https://cal.com/likearthstudio/30min"
                   target="_blank"
                   className="py-[10px] md:py-[17px] xl:py-[13px] w-[100px] md:w-[160px] text-center text-white text-[0.875rem] bg-primary hover:bg-[#04525b] transition-all duration-500 ease-in-out rounded-[0.938rem] absolute right-0"
                 >
-                  Contact Us
+                  Book a <Call></Call>
                 </motion.a>
               </motion.div>
             </div>
