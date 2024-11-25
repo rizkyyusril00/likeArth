@@ -75,6 +75,7 @@ export default function Nav() {
             <button
               onClick={() => setOpenMenu(!openMenu)}
               className="xl:hidden flex flex-col justify-between items-center w-[30px] md:w-[40px] h-[20px] md:h-[30px] gap-[2px] mt-1"
+              aria-label="hamburger menu"
             >
               <span
                 className={`w-full h-[2px] bg-primary transition-all ease-in-out duration-500 delay-150 ${
@@ -122,6 +123,7 @@ export default function Nav() {
             <div className="flex items-center justify-center">
               <a
                 href="https://cal.com/likearthstudio/30min"
+                aria-label="book a call"
                 target="_blank"
                 className="border border-primary px-[1.5rem] py-[0.719rem] rounded-[0.75rem] bg-primary hover:bg-[#04525b] text-white text-[1.1rem] md:text-[1.8rem] transition-all duration-500 ease-in-out mt-[1.5rem]"
               >
