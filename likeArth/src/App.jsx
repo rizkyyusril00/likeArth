@@ -8,6 +8,7 @@ import Testimonials from "./assets/components/testimonials";
 import Faqs from "./assets/components/faq";
 import FooterHero from "./assets/components/footerHero";
 import Footer from "./assets/components/footer";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 function App() {
   return (

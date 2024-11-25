@@ -87,12 +87,12 @@ export default function Portfolio() {
               {portfolios.map((portfolio) => (
                 <figure
                   key={portfolio.id}
-                  className="w-[400px] h-[300px] md:w-[550px] md:h-[380px] rounded-[12px]"
+                  className="w-[400px] h-[300px] md:w-[550px] md:h-[380px] rounded-[12px] overflow-hidden"
                 >
                   <img
                     src={portfolio.img}
                     alt=""
-                    className="w-full h-full object-cover rounded-[12px]"
+                    className="w-full h-full object-cover rounded-[12px] transition-all ease-in-out hover:scale-[1.01] duration-500"
                   />
                 </figure>
               ))}
@@ -113,12 +113,12 @@ export default function Portfolio() {
               {portfolios_second.map((portfolio) => (
                 <figure
                   key={portfolio.id}
-                  className="w-[400px] h-[300px] md:w-[550px] md:h-[380px] rounded-[12px]"
+                  className="w-[400px] h-[300px] md:w-[550px] md:h-[380px] rounded-[12px] overflow-hidden"
                 >
                   <img
                     src={portfolio.img}
                     alt=""
-                    className="w-full h-full object-cover rounded-[12px]"
+                    className="w-full h-full object-cover rounded-[12px] transition-all ease-in-out hover:scale-[1.01] duration-500"
                   />
                 </figure>
               ))}
