@@ -1,4 +1,3 @@
-// import Logo from '../img/logo.png'
 import Logo2 from "../img/logo2.png";
 import Btn from "./btn";
 import { useState } from "react";
@@ -116,14 +115,16 @@ export default function Nav() {
                   </Link>
                 </li>
               ))}
+            </ul>
+            <div className="flex items-center justify-center">
               <a
                 href="https://cal.com/likearthstudio/30min"
                 target="_blank"
-                className="border border-primary px-[1.5rem] py-[0.719rem] rounded-[0.75rem] bg-primary hover:bg-[#04525b] text-white text-[1.1rem] md:text-[1.8rem] transition-all duration-500 ease-in-out"
+                className="border border-primary px-[1.5rem] py-[0.719rem] rounded-[0.75rem] bg-primary hover:bg-[#04525b] text-white text-[1.1rem] md:text-[1.8rem] transition-all duration-500 ease-in-out mt-[1.5rem]"
               >
                 Book a Call
               </a>
-            </ul>
+            </div>
           </div>
         </div>
       </motion.nav>
