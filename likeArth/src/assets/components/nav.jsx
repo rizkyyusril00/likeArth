@@ -31,6 +31,7 @@ export default function Nav() {
               offset={-70}
               duration={500}
               className="cursor-pointer"
+              href="/"
             >
               <figure className="flex items-center justify-center gap-[1rem]">
                 <img
@@ -56,6 +57,7 @@ export default function Nav() {
                     offset={-70}
                     duration={500}
                     className="text-primary text-[1rem]"
+                    href={menu.link}
                   >
                     {menu.name}
                   </Link>
@@ -106,6 +108,7 @@ export default function Nav() {
                 <li key={menu.id} className="cursor-pointer">
                   <Link
                     to={menu.link}
+                    href={menu.link}
                     smooth={true}
                     offset={-70}
                     duration={500}
