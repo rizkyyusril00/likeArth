@@ -1,5 +1,3 @@
-import Service3 from "../img/our_service/service3.svg";
-import Service4 from "../img/our_service/service4.svg";
 import CallUsOurService from "./OurServiceComponent/callUsOurService";
 import OurServiceContentBottom from "./OurServiceComponent/ourServiceContentBottom";
 import OurServiceContentTop from "./OurServiceComponent/ourServiceContentTop";

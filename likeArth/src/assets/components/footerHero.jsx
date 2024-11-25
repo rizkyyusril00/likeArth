@@ -1,4 +1,3 @@
-import Btn from "./btn";
 import { useTypewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 import React, { useState, useEffect } from "react";
