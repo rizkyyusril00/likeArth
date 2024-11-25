@@ -42,6 +42,7 @@ export default function Footer() {
                     href={ft_icon.link}
                     target="_blank"
                     className="cursor-pointer"
+                    aria-label="icon sosial media"
                   >
                     <img src={ft_icon.icon} alt="" />
                   </a>
