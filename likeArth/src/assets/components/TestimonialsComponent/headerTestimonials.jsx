@@ -42,7 +42,7 @@ export default function HeaderTestimonials() {
         </p>
       </div>
       {/* box2 */}
-      <div
+      {/* <div
         className="relative -mt-10 md:-mt-14 lg:-mt-0"
         data-aos="fade-left"
         data-aos-once="true"
@@ -58,7 +58,7 @@ export default function HeaderTestimonials() {
           className="w-full h-full"
         />
         <div className="w-[200px] h-[40px] absolute bottom-0 right-0 bg-white"></div>
-      </div>
+      </div> */}
     </div>
   );
 }

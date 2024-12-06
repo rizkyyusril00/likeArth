@@ -30,7 +30,7 @@ export default function WhyUsContent() {
           </p>
         </div>
         {/* box2 */}
-        <div
+        {/* <div
           className="relative order-2 md:order-1"
           data-aos="fade-left"
           data-aos-once="true"
@@ -45,7 +45,7 @@ export default function WhyUsContent() {
             className="scale-y"
           />
           <div className="w-[200px] h-[40px] absolute bottom-0 right-0 bg-white"></div>
-        </div>
+        </div> */}
       </div>
       {/* 2 */}
       <div className="whyus-box flex flex-col md:flex-row justify-start md:justify-between items-start md:items-center gap-[40px] pt-0 relative z-10">
@@ -72,7 +72,7 @@ export default function WhyUsContent() {
           </p>
         </div>
         {/* box2 */}
-        <div
+        {/* <div
           className="relative order-2 md:order-1"
           data-aos="fade-right"
           data-aos-once="true"
@@ -87,7 +87,7 @@ export default function WhyUsContent() {
             className="scale-y"
           />
           <div className="w-[200px] h-[40px] absolute bottom-0 right-0 bg-white"></div>
-        </div>
+        </div> */}
       </div>
       {/* 3 */}
       <div className="whyus-box flex flex-col md:flex-row justify-start md:justify-between items-start md:items-center gap-[40px] pt-0 relative z-10">
@@ -114,7 +114,7 @@ export default function WhyUsContent() {
           </p>
         </div>
         {/* box2 */}
-        <div
+        {/* <div
           className="relative"
           data-aos="fade-left"
           data-aos-once="true"
@@ -129,7 +129,7 @@ export default function WhyUsContent() {
             className="scale-y"
           />
           <div className="w-[200px] h-[40px] absolute bottom-0 right-0 bg-white"></div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -45,7 +45,7 @@ export default function Faq() {
                   Not sure about something? Talk to us directly!
                 </p>
               </div>
-              <div
+              {/* <div
                 className="relative -mt-10 md:-mt-12"
                 data-aos="fade-up"
                 data-aos-once="true"
@@ -61,7 +61,7 @@ export default function Faq() {
                   className=""
                 />
                 <div className="w-[200px] h-[40px] absolute bottom-0 right-0 bg-white"></div>
-              </div>
+              </div> */}
             </div>
             {/* box 2 */}
             <div className="w-full xl:w-[50%] flex flex-col gap-[1.5rem]">
