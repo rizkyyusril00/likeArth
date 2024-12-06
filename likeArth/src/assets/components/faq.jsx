@@ -1,7 +1,39 @@
-import FaqImg from "../img/faq/faq.svg";
 import Accordion from "../components/accordion";
 import Lottie from "lottie-react";
 import AnimationDino from "../lottie/faq.json";
+import { memo, useMemo } from "react";
+import { useInView } from "react-intersection-observer";
+
+const OptimizedLottie = memo(({ animationData }) => {
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Animasi hanya dimuat satu kali
+    threshold: 0.5, // Aktif saat 50% elemen terlihat
+  });
+
+  const animationOptions = useMemo(
+    () => ({
+      animationData,
+      loop: true,
+      autoplay: true,
+    }),
+    [animationData]
+  );
+
+  return (
+    <div
+      ref={ref}
+      className="relative -mt-10 md:-mt-12"
+      data-aos="fade-up"
+      data-aos-once="true"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-delay="700"
+    >
+      {inView && <Lottie {...animationOptions} className="w-full h-full" />}
+      <div className="w-[200px] h-[40px] absolute bottom-0 right-0 bg-white"></div>
+    </div>
+  );
+});
 
 export default function Faq() {
   return (
@@ -45,24 +77,9 @@ export default function Faq() {
                   Not sure about something? Talk to us directly!
                 </p>
               </div>
-              {/* <div
-                className="relative -mt-10 md:-mt-12"
-                data-aos="fade-up"
-                data-aos-once="true"
-                data-aos-duration="1000"
-                data-aos-easing="ease-in-out"
-                data-aos-delay="700"
-              >
-                <Lottie
-                  animationData={AnimationDino}
-                  loop={true}
-                  autoPlay={true}
-                  style={{ width: "100%", height: "100%" }}
-                  className=""
-                />
-                <div className="w-[200px] h-[40px] absolute bottom-0 right-0 bg-white"></div>
-              </div> */}
+              <OptimizedLottie animationData={AnimationDino} />
             </div>
+            {/* box 2 */}
             {/* box 2 */}
             <div className="w-full xl:w-[50%] flex flex-col gap-[1.5rem]">
               <Accordion
