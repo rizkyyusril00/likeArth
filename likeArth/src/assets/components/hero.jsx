@@ -75,12 +75,13 @@ export default function Hero() {
                 ))}
               </motion.h1>
               {/* description */}
-
               <motion.p
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5, ease: "easeInOut" }}
+                initial={{ opacity: 0, y: 25 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.8, duration: 1.5, ease: "easeInOut" }}
+                viewport={{ once: true }}
                 className="text-primary text-[1rem] text-center font-normal leading-[28px] xl:leading-[28px]"
+                style={{ visibility: "visible" }} // Pastikan elemen terlihat meski belum di-animate
               >
                 If you're looking to achieve your business goals through
                 delightful experiences and engaging design, then you're in the
