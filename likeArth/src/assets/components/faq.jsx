@@ -80,7 +80,6 @@ export default function Faq() {
               <OptimizedLottie animationData={AnimationDino} />
             </div>
             {/* box 2 */}
-            {/* box 2 */}
             <div className="w-full xl:w-[50%] flex flex-col gap-[1.5rem]">
               <Accordion
                 title="What is Likearth Studio?"
