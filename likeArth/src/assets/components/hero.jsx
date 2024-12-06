@@ -43,56 +43,36 @@ export default function Hero() {
           <div className="hero-box flex flex-col items-center justify-center gap-[1rem]">
             <div className="flex flex-col items-center justify-center gap-[1.5rem] md:gap-[1rem]">
               {/* tagline */}
-              <motion.h1 className="text-primary text-[32px] md:text-[3.5rem] xl:text-[4rem] leading-tight xl:leading-[72px] text-center font-bold">
-                <motion.span
-                  whileInView={{ opacity: [0, 1] }}
-                  transition={{ delay: 0.1, duration: 2, ease: "easeInOut" }}
-                  viewport={{ once: true }}
-                >
-                  Ready{" "}
-                </motion.span>
-                <motion.span
-                  whileInView={{ opacity: [0, 1] }}
-                  transition={{ delay: 0.2, duration: 2, ease: "easeInOut" }}
-                  viewport={{ once: true }}
-                >
-                  to{" "}
-                </motion.span>
-                <motion.span
-                  whileInView={{ opacity: [0, 1] }}
-                  transition={{ delay: 0.3, duration: 2, ease: "easeInOut" }}
-                  viewport={{ once: true }}
-                >
-                  design{" "}
-                </motion.span>
-                <motion.span
-                  whileInView={{ opacity: [0, 1] }}
-                  transition={{ delay: 0.4, duration: 2, ease: "easeInOut" }}
-                  viewport={{ once: true }}
-                >
-                  an{" "}
-                </motion.span>
-                <motion.span
-                  whileInView={{ opacity: [0, 1] }}
-                  transition={{ delay: 0.5, duration: 2, ease: "easeInOut" }}
-                  viewport={{ once: true }}
-                >
-                  astounding{" "}
-                </motion.span>
-                <motion.span
-                  whileInView={{ opacity: [0, 1] }}
-                  transition={{ delay: 0.6, duration: 2, ease: "easeInOut" }}
-                  viewport={{ once: true }}
-                >
-                  digital{" "}
-                </motion.span>
-                <motion.span
-                  whileInView={{ opacity: [0, 1] }}
-                  transition={{ delay: 0.7, duration: 2, ease: "easeInOut" }}
-                  viewport={{ once: true }}
-                >
-                  product?
-                </motion.span>
+              <motion.h1
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 1, ease: "easeInOut" }}
+                viewport={{ once: true }}
+                className="text-primary text-[32px] md:text-[3.5rem] xl:text-[4rem] leading-tight xl:leading-[72px] text-center font-bold"
+              >
+                {[
+                  "Ready",
+                  "to",
+                  "design",
+                  "an",
+                  "astounding",
+                  "digital",
+                  "product?",
+                ].map((word, index) => (
+                  <motion.span
+                    key={index}
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{
+                      delay: index * 0.1,
+                      duration: 1,
+                      ease: "easeInOut",
+                    }}
+                    viewport={{ once: true }}
+                  >
+                    {word}{" "}
+                  </motion.span>
+                ))}
               </motion.h1>
               {/* description */}
               <motion.p
