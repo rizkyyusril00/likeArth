@@ -75,10 +75,11 @@ export default function Hero() {
                 ))}
               </motion.h1>
               {/* description */}
+
               <motion.p
-                whileInView={{ y: [25, 0], opacity: [0, 1] }}
-                transition={{ delay: 0.8, duration: 1.5, ease: "easeInOut" }}
-                viewport={{ once: true }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5, ease: "easeInOut" }}
                 className="text-primary text-[1rem] text-center font-normal leading-[28px] xl:leading-[28px]"
               >
                 If you're looking to achieve your business goals through
