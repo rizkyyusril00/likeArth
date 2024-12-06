@@ -1,5 +1,7 @@
 import FaqImg from "../img/faq/faq.svg";
 import Accordion from "../components/accordion";
+import Lottie from "lottie-react";
+import AnimationDino from "../lottie/faq.json";
 
 export default function Faq() {
   return (
@@ -43,16 +45,23 @@ export default function Faq() {
                   Not sure about something? Talk to us directly!
                 </p>
               </div>
-              <figure
+              <div
+                className="relative -mt-10 md:-mt-12"
                 data-aos="fade-up"
                 data-aos-once="true"
                 data-aos-duration="1000"
                 data-aos-easing="ease-in-out"
                 data-aos-delay="700"
-                className="flex items-center justify-center w-full"
               >
-                <img src={FaqImg} alt="" />
-              </figure>
+                <Lottie
+                  animationData={AnimationDino}
+                  loop={true}
+                  autoPlay={true}
+                  style={{ width: "100%", height: "100%" }}
+                  className=""
+                />
+                <div className="w-[200px] h-[40px] absolute bottom-0 right-0 bg-white"></div>
+              </div>
             </div>
             {/* box 2 */}
             <div className="w-full xl:w-[50%] flex flex-col gap-[1.5rem]">

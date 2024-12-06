@@ -14,72 +14,70 @@ import HeaderTestimonials from "./TestimonialsComponent/headerTestimonials";
 
 export default function Testimonials() {
   return (
-    <>
-      <div
-        id="testimonials"
-        className="testimonials flex flex-col gap-[2.875rem] relative px-[24px] overflow-hidden"
-      >
-        <div className="container mx-auto max-w-[1120px]">
-          {/* box atas */}
-          <HeaderTestimonials />
-          {/* marquee */}
-          <div className="">
-            <Marquee
-              autoFill
-              gradient="true"
-              gradientColor="white"
-              gradientWidth={100}
-            >
-              <div className="flex justify-center items-center gap-[4.375rem] py-[3.574rem]">
-                <img
-                  src={Clients1}
-                  alt=""
-                  className="h-[50px] filter grayscale hover:grayscale-0"
-                />
-                <img
-                  src={Clients2}
-                  alt=""
-                  className="h-[50px] filter grayscale hover:grayscale-0"
-                />
-                <img
-                  src={Clients3}
-                  alt=""
-                  className="h-[50px] filter grayscale hover:grayscale-0"
-                />
-                <img
-                  src={Clients4}
-                  alt=""
-                  className="h-[100px] filter grayscale hover:grayscale-0"
-                />
-                <img
-                  src={Clients5}
-                  alt=""
-                  className="h-[100px] filter grayscale hover:grayscale-0"
-                />
-                <img
-                  src={Clients6}
-                  alt=""
-                  className="h-[100px] filter grayscale hover:grayscale-0"
-                />
-                <img
-                  src={Clients7}
-                  alt=""
-                  className="h-[100px] filter grayscale hover:grayscale-0 pr-[4.375rem]"
-                />
-              </div>
-            </Marquee>
-          </div>
-          {/* komentar */}
-          <KomentarTestimonials />
+    <div
+      id="testimonials"
+      className="testimonials flex flex-col gap-[2.875rem] relative px-[24px] overflow-hidden"
+    >
+      <div className="container mx-auto max-w-[1120px]">
+        {/* box atas */}
+        <HeaderTestimonials />
+        {/* marquee */}
+        <div className="">
+          <Marquee
+            autoFill
+            gradient="true"
+            gradientColor="white"
+            gradientWidth={100}
+          >
+            <div className="flex justify-center items-center gap-[4.375rem] pt-0 pb-[3.574rem]">
+              <img
+                src={Clients1}
+                alt=""
+                className="h-[50px] filter grayscale hover:grayscale-0"
+              />
+              <img
+                src={Clients2}
+                alt=""
+                className="h-[50px] filter grayscale hover:grayscale-0"
+              />
+              <img
+                src={Clients3}
+                alt=""
+                className="h-[50px] filter grayscale hover:grayscale-0"
+              />
+              <img
+                src={Clients4}
+                alt=""
+                className="h-[100px] filter grayscale hover:grayscale-0"
+              />
+              <img
+                src={Clients5}
+                alt=""
+                className="h-[100px] filter grayscale hover:grayscale-0"
+              />
+              <img
+                src={Clients6}
+                alt=""
+                className="h-[100px] filter grayscale hover:grayscale-0"
+              />
+              <img
+                src={Clients7}
+                alt=""
+                className="h-[100px] filter grayscale hover:grayscale-0 pr-[4.375rem]"
+              />
+            </div>
+          </Marquee>
         </div>
-        <img
-          src={Awan3}
-          alt=""
-          className="hidden xl:inline-block absolute z-0 top-0 right-0"
-        />
-        <img src={Awan5} alt="" className="absolute z-0 bottom-0 left-0" />
-        <img src={Awan6} alt="" className="absolute z-0 bottom-20 right-0" />
+        {/* komentar */}
+        <KomentarTestimonials />
       </div>
-    </>
+      <img
+        src={Awan3}
+        alt=""
+        className="hidden xl:inline-block absolute z-0 top-0 right-0"
+      />
+      <img src={Awan5} alt="" className="absolute z-0 bottom-0 left-0" />
+      <img src={Awan6} alt="" className="absolute z-0 bottom-20 right-0" />
+    </div>
   );
 }
