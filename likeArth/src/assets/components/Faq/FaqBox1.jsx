@@ -50,7 +50,7 @@ export default function FaqBox1() {
       </div>
       {inView && ( // Render Lottie only when in viewport
         <div
-          className="relative -mt-10 md:-mt-14 lg:-mt-0"
+          className="relative -mt-10 md:-mt-14 lg:-mt-0 hidden md:block"
           data-aos="fade-up"
           data-aos-once="true"
           data-aos-duration="1000"

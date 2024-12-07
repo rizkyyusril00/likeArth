@@ -8,44 +8,7 @@ export default function Faq() {
         <div className="container mx-auto max-w-[1120px]">
           <div className="faq-box flex flex-col xl:flex-row justify-between gap-[2rem] relative z-20">
             {/* box 1 */}
-            <div className="flex flex-col justify-center items-center xl:justify-start xl:items-start w-full xl:w-[50%] gap-[2.875rem]">
-              <div className="flex flex-col items-center justify-center xl:items-start xl:justify-start gap-[1.5rem]">
-                <div className="flex flex-col items-center justify-center xl:items-start xl:justify-start gap-[0.5rem]">
-                  <p
-                    data-aos="fade-up"
-                    data-aos-once="true"
-                    data-aos-duration="1000"
-                    data-aos-easing="ease-in-out"
-                    data-aos-delay="200"
-                    className="text-[#676767] text-[1rem] xl:text-[0.875rem] leading-[28px] text-center xl:text-start"
-                  >
-                    FAQ
-                  </p>
-                  <h1
-                    data-aos="fade-up"
-                    data-aos-once="true"
-                    data-aos-duration="1000"
-                    data-aos-easing="ease-in-out"
-                    data-aos-delay="300"
-                    className="txt-faq font-bold text-[2.5rem] text-secondary text-center xl:text-start"
-                  >
-                    Find your answers here.
-                  </h1>
-                </div>
-                <p
-                  data-aos="fade-up"
-                  data-aos-once="true"
-                  data-aos-duration="1000"
-                  data-aos-easing="ease-in-out"
-                  data-aos-delay="500"
-                  className="txt-faq text-[#676767] font-normal text-[1.25rem] text-center xl:text-start"
-                >
-                  Not sure about something? Talk to us directly!
-                </p>
-              </div>
-              {/* <OptimizedLottie animationData={AnimationDino} /> */}
-              <FaqBox1 />
-            </div>
+            <FaqBox1 />
             {/* box 2 */}
             <div className="w-full xl:w-[50%] flex flex-col gap-[1.5rem]">
               <Accordion
