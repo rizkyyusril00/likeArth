@@ -4,43 +4,53 @@ import AnimationDino from "../lottie/faq.json";
 import { memo, useMemo } from "react";
 import { useInView } from "react-intersection-observer";
 
-const OptimizedLottie = memo(({ animationData }) => {
-  const { ref, inView } = useInView({
-    triggerOnce: true, // Animasi hanya dimuat satu kali
-    threshold: 0.5, // Aktif saat 50% elemen terlihat
-  });
+// Komponen Lottie yang Dioptimalkan
+// const OptimizedLottie = memo(({ animationData }) => {
+//   const { ref, inView } = useInView({
+//     triggerOnce: true, // Animasi hanya dimuat satu kali
+//     threshold: 0.2, // Aktif saat 20% elemen terlihat (lebih rendah untuk mobile)
+//   });
 
-  const animationOptions = useMemo(
-    () => ({
-      animationData,
-      loop: true,
-      autoplay: true,
-    }),
-    [animationData]
-  );
+//   const animationOptions = useMemo(
+//     () => ({
+//       animationData,
+//       loop: true,
+//       autoplay: true,
+//     }),
+//     [animationData]
+//   );
 
-  return (
-    <div
-      ref={ref}
-      className="relative -mt-10 md:-mt-12"
-      data-aos="fade-up"
-      data-aos-once="true"
-      data-aos-duration="1000"
-      data-aos-easing="ease-in-out"
-      data-aos-delay="700"
-    >
-      {inView && <Lottie {...animationOptions} className="w-full h-full" />}
-      <div className="w-[200px] h-[40px] absolute bottom-0 right-0 bg-white"></div>
-    </div>
-  );
-});
+//   return (
+//     <div
+//       ref={ref}
+//       className="relative -mt-10 md:-mt-12"
+//       data-aos="fade-up"
+//       data-aos-once="true"
+//       data-aos-duration="1000"
+//       data-aos-easing="ease-in-out"
+//       data-aos-delay="700"
+//     >
+//       {inView && <Lottie {...animationOptions} className="w-full h-full" />}
+//       <div className="w-[200px] h-[40px] absolute bottom-0 right-0 bg-white"></div>
+//     </div>
+//   );
+// });
 
 export default function Faq() {
+  // Lazy load Lottie when in viewport
+  const { ref, inView } = useInView({ triggerOnce: true });
+
+  // Memoize Lottie animation data
+  const memoizedAnimationData = useMemo(() => AnimationDino, []);
+
   return (
     <>
       <div id="faq" className="faq py-[5rem] relative px-[24px]">
         <div className="container mx-auto max-w-[1120px]">
-          <div className="faq-box flex flex-col xl:flex-row justify-between gap-[2rem] relative z-20">
+          <div
+            className="faq-box flex flex-col xl:flex-row justify-between gap-[2rem] relative z-20"
+            ref={ref}
+          >
             {/* box 1 */}
             <div className="flex flex-col justify-center items-center xl:justify-start xl:items-start w-full xl:w-[50%] gap-[2.875rem]">
               <div className="flex flex-col items-center justify-center xl:items-start xl:justify-start gap-[1.5rem]">
@@ -77,7 +87,26 @@ export default function Faq() {
                   Not sure about something? Talk to us directly!
                 </p>
               </div>
-              <OptimizedLottie animationData={AnimationDino} />
+              {/* <OptimizedLottie animationData={AnimationDino} /> */}
+              {/* {inView && ( // Render Lottie only when in viewport
+                <div
+                  className="relative -mt-10 md:-mt-14 lg:-mt-0"
+                  data-aos="fade-up"
+                  data-aos-once="true"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  data-aos-delay="700"
+                >
+                  <Lottie
+                    animationData={memoizedAnimationData}
+                    loop={true}
+                    autoPlay={true}
+                    style={{ width: "100%", height: "100%" }}
+                    className="w-full h-full"
+                  />
+                  <div className="w-[200px] h-[40px] absolute bottom-0 right-0 bg-white"></div>
+                </div>
+              )} */}
             </div>
             {/* box 2 */}
             <div className="w-full xl:w-[50%] flex flex-col gap-[1.5rem]">
