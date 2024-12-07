@@ -180,7 +180,7 @@ export default function Hero() {
             <motion.div
               whileInView={{ y: [25, 0] }}
               transition={{ delay: 0.9, duration: 1.5, ease: "easeInOut" }}
-              viewport={{ once: false }}
+              viewport={{ once: true }}
               className="flex md:hidden justify-center items-center"
             >
               <motion.div
