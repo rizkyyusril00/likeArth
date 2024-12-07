@@ -56,7 +56,13 @@ export default function WhyUsBox3() {
           <div className="w-[200px] h-[40px] absolute bottom-0 right-0 bg-white"></div>
         </div>
       )}
-      <figure className="block md:hidden">
+      <figure
+        data-aos="fade-right"
+        data-aos-once="true"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        className="block md:hidden"
+      >
         <img src={WhyUs} alt="" />
       </figure>
     </div>

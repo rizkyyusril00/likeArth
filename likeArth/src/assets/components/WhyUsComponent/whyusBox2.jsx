@@ -55,7 +55,13 @@ export default function WhyUsBox2() {
           <div className="w-[200px] h-[40px] absolute bottom-0 right-0 bg-white"></div>
         </div>
       )}
-      <figure className="order-1 md:order-2 block md:hidden">
+      <figure
+        data-aos="fade-right"
+        data-aos-once="true"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        className="order-1 md:order-2 block md:hidden"
+      >
         <img src={WhyUs} alt="" />
       </figure>
     </div>

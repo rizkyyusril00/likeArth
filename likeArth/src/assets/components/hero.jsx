@@ -201,7 +201,7 @@ export default function Hero() {
                       fontSize: ["0.1rem", "0.875rem"],
                     }}
                     transition={{ delay: 2.2, duration: 1, ease: "easeInOut" }}
-                    viewport={{ once: false }}
+                    viewport={{ once: true }}
                     className="py-[0.1rem] md:py-[0.6rem] leading-[28px] mr-2"
                   >
                     <span className="text-primary">1 Slot available!</span>{" "}

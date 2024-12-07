@@ -68,7 +68,14 @@ export default function FaqBox1() {
           <div className="w-[200px] h-[40px] absolute bottom-0 right-0 bg-white"></div>
         </div>
       )}
-      <figure className="block md:hidden">
+      <figure
+        data-aos="fade-up"
+        data-aos-once="true"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-delay="700"
+        className="block md:hidden"
+      >
         <img src={Faq} alt="" />
       </figure>
     </div>
