@@ -115,7 +115,7 @@ export default function Hero() {
               >
                 <i className="bi bi-check-circle text-primary text-[1rem]"></i>
                 <p className="text-[1rem] text-[#676767] text-center">
-                  Your satisfaction is our priority
+                  {Poins}
                 </p>
               </motion.div>
             </div>
@@ -186,7 +186,7 @@ export default function Hero() {
               <motion.div
                 whileInView={{ opacity: [0, 1] }}
                 transition={{ delay: 1, duration: 1.5, ease: "easeInOut" }}
-                viewport={{ once: false }}
+                viewport={{ once: true }}
                 className="flex items-center justify-center gap-1 md:gap-4 xl:gap-[0.625rem] bg-white pl-[0.75rem] rounded-[0.938rem] relative w-auto transition-all duration-500 ease-in-out"
               >
                 <div className="flex items-center justify-center gap-[0.625rem]">
