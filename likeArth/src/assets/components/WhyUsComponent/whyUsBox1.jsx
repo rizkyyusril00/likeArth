@@ -2,6 +2,7 @@ import Lottie from "lottie-react";
 import AnimationDino from "../../lottie/rex.json";
 import { useMemo } from "react";
 import { useInView } from "react-intersection-observer";
+import WhyUs from "../../img/why_us/whyus1.svg";
 
 export default function WhyUsBox1() {
   // Lazy load Lottie when in viewport
@@ -39,7 +40,7 @@ export default function WhyUsBox1() {
       {/* box2 */}
       {inView && ( // Render Lottie only when in viewport
         <div
-          className="relative order-2 md:order-1 -mt-10 md:-mt-0"
+          className="relative order-2 md:order-1 -mt-10 md:-mt-0 hidden md:hidden"
           data-aos="fade-left"
           data-aos-once="true"
           data-aos-duration="1000"
@@ -55,6 +56,9 @@ export default function WhyUsBox1() {
           <div className="w-[200px] h-[40px] absolute bottom-0 right-0 bg-white"></div>
         </div>
       )}
+      <figure className="block md:hidden">
+        <img src={WhyUs} alt="" />
+      </figure>
     </div>
   );
 }

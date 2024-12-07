@@ -2,6 +2,7 @@ import { useInView } from "react-intersection-observer";
 import { useMemo } from "react";
 import Lottie from "lottie-react";
 import AnimationDino from "../../lottie/faq.json";
+import Faq from "../../img/faq/faq.svg";
 
 export default function FaqBox1() {
   // Lazy load Lottie when in viewport
@@ -50,7 +51,7 @@ export default function FaqBox1() {
       </div>
       {inView && ( // Render Lottie only when in viewport
         <div
-          className="relative -mt-10 md:-mt-14 lg:-mt-0"
+          className="relative -mt-10 md:-mt-14 lg:-mt-0 hidden md:block"
           data-aos="fade-up"
           data-aos-once="true"
           data-aos-duration="1000"
@@ -67,6 +68,9 @@ export default function FaqBox1() {
           <div className="w-[200px] h-[40px] absolute bottom-0 right-0 bg-white"></div>
         </div>
       )}
+      <figure className="block md:hidden">
+        <img src={Faq} alt="" />
+      </figure>
     </div>
   );
 }

@@ -2,6 +2,7 @@ import Lottie from "lottie-react";
 import AnimationDino from "../../lottie/rex3.json";
 import { useMemo } from "react";
 import { useInView } from "react-intersection-observer";
+import WhyUs from "../../img/why_us/whyus3.svg";
 
 export default function WhyUsBox3() {
   // Lazy load Lottie when in viewport
@@ -12,7 +13,7 @@ export default function WhyUsBox3() {
   return (
     <div
       ref={ref}
-      className="whyus-box flex flex-col md:flex-row justify-start md:justify-between items-start md:items-center gap-[40px] pt-0 relative z-10"
+      className="whyus-box flex flex-col md:flex-row justify-start md:justify-between items-start md:items-center gap-[40px] pt-10 md:pt-0 relative z-10"
     >
       {/* box1 */}
       <div
@@ -39,7 +40,7 @@ export default function WhyUsBox3() {
       {/* box2 */}
       {inView && ( // Render Lottie only when in viewport
         <div
-          className="relative -mt-5 md:-mt-0"
+          className="relative -mt-5 md:-mt-0 hidden md:block"
           data-aos="fade-left"
           data-aos-once="true"
           data-aos-duration="1000"
@@ -55,6 +56,9 @@ export default function WhyUsBox3() {
           <div className="w-[200px] h-[40px] absolute bottom-0 right-0 bg-white"></div>
         </div>
       )}
+      <figure className="block md:hidden">
+        <img src={WhyUs} alt="" />
+      </figure>
     </div>
   );
 }
