@@ -12,8 +12,8 @@ export default function Hero() {
       "Unlimited design requests & revisions",
     ],
     loop: false,
-    typeSpeed: 10,
-    deleteSpeed: 10,
+    typeSpeed: 5,
+    deleteSpeed: 5,
     delaySpeed: 500,
   });
   // animation framer
