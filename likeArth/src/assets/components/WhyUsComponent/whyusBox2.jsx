@@ -39,7 +39,7 @@ export default function WhyUsBox2() {
       {/* box2 */}
       {inView && ( // Render Lottie only when in viewport
         <div
-          className="relative order-2 md:order-1 -mt-5 md:-mt-0 hidden md:hidden"
+          className="relative order-2 md:order-1 -mt-5 md:-mt-0 hidden md:block"
           data-aos="fade-right"
           data-aos-once="true"
           data-aos-duration="1000"
