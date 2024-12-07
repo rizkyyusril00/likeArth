@@ -12,9 +12,9 @@ export default function Hero() {
       "Unlimited design requests & revisions",
     ],
     loop: false,
-    typeSpeed: 25,
-    deleteSpeed: 25,
-    delaySpeed: 1500,
+    typeSpeed: 10,
+    deleteSpeed: 10,
+    delaySpeed: 500,
   });
   // animation framer
   const delay = 0.9;
