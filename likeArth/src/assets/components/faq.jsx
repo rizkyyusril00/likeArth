@@ -88,7 +88,7 @@ export default function Faq() {
                 </p>
               </div>
               {/* <OptimizedLottie animationData={AnimationDino} /> */}
-              {/* {inView && ( // Render Lottie only when in viewport
+              {inView && ( // Render Lottie only when in viewport
                 <div
                   className="relative -mt-10 md:-mt-14 lg:-mt-0"
                   data-aos="fade-up"
@@ -106,7 +106,7 @@ export default function Faq() {
                   />
                   <div className="w-[200px] h-[40px] absolute bottom-0 right-0 bg-white"></div>
                 </div>
-              )} */}
+              )}
             </div>
             {/* box 2 */}
             <div className="w-full xl:w-[50%] flex flex-col gap-[1.5rem]">
