@@ -52,7 +52,7 @@ export default function HeaderTestimonials() {
         </p>
       </div>
       {/* box2 */}
-      {/* {inView && ( // Render Lottie only when in viewport
+      {inView && ( // Render Lottie only when in viewport
         <div
           className="relative -mt-10 md:-mt-14 lg:-mt-0"
           data-aos="fade-left"
@@ -70,7 +70,7 @@ export default function HeaderTestimonials() {
           />
           <div className="w-[200px] h-[40px] absolute bottom-0 right-0 bg-white"></div>
         </div>
-      )} */}
+      )}
     </div>
   );
 }

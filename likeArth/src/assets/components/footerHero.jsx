@@ -1,21 +1,8 @@
-import { useTypewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 import React, { useState, useEffect } from "react";
+import PoinsType from "./FooterHero/PoinsType";
 
 export default function FooterHero() {
-  // type animation
-  const [Poins] = useTypewriter({
-    words: [
-      "Experienced Designer",
-      "Your satisfactions is our priority",
-      "Unlimited design requests & revisions",
-    ],
-    loop: false,
-    typeSpeed: 25,
-    deleteSpeed: 25,
-    delaySpeed: 1500,
-  });
-
   const poins = [
     { id: 1, name: "Experienced Designer", delay: "700" },
     { id: 2, name: "Your satisfactions is our priority", delay: "900" },
@@ -86,10 +73,7 @@ export default function FooterHero() {
               ))}
             </div>
             {/* mobile poins */}
-            <div className="flex justify-center items-center gap-[0.5rem] lg:hidden">
-              <i className="bi bi-check-circle text-primary text-[1rem]"></i>
-              <p className="text-[1rem] text-[#676767] text-center">{Poins}</p>
-            </div>
+            <PoinsType />
             {/* contact us */}
             <div className="px-7 sm:px-[58px] md:px-[165px] lg:px-[280px] xl:px-[270px] container mx-auto max-w-[1120px] flex items-center justify-center">
               <motion.div
