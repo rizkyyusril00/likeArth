@@ -16,7 +16,7 @@ export default function Testimonials() {
   return (
     <div
       id="testimonials"
-      className="testimonials flex flex-col gap-[2.875rem] relative px-[24px] overflow-hidden"
+      className="testimonials flex flex-col gap-[2.875rem] relative px-[24px] overflow-hidden -mt-0 lg:-mt-28"
     >
       <div className="container mx-auto max-w-[1120px]">
         {/* box atas */}

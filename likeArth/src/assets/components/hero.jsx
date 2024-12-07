@@ -115,7 +115,7 @@ export default function Hero() {
               >
                 <i className="bi bi-check-circle text-primary text-[1rem]"></i>
                 <p className="text-[1rem] text-[#676767] text-center">
-                  {Poins}
+                  Your satisfaction is our priority
                 </p>
               </motion.div>
             </div>
