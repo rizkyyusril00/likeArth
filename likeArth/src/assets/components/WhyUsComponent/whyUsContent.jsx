@@ -31,7 +31,7 @@ export default function WhyUsContent() {
         </div>
         {/* box2 */}
         <div
-          className="relative order-2 md:order-1"
+          className="relative order-2 md:order-1 -mt-10 md:-mt-0"
           data-aos="fade-left"
           data-aos-once="true"
           data-aos-duration="1000"
@@ -73,7 +73,7 @@ export default function WhyUsContent() {
         </div>
         {/* box2 */}
         <div
-          className="relative order-2 md:order-1"
+          className="relative order-2 md:order-1 -mt-5 md:-mt-0"
           data-aos="fade-right"
           data-aos-once="true"
           data-aos-duration="1000"
@@ -115,7 +115,7 @@ export default function WhyUsContent() {
         </div>
         {/* box2 */}
         <div
-          className="relative"
+          className="relative -mt-5 md:-mt-0"
           data-aos="fade-left"
           data-aos-once="true"
           data-aos-duration="1000"
