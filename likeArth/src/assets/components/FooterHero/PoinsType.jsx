@@ -10,9 +10,9 @@ const PoinsType = () => {
       "Unlimited design requests & revisions",
     ],
     loop: false,
-    typeSpeed: 10,
-    deleteSpeed: 10,
-    delaySpeed: 1000,
+    typeSpeed: 5,
+    deleteSpeed: 5,
+    delaySpeed: 500,
   });
 
   return (
