@@ -1,15 +1,24 @@
 import Lottie from "lottie-react";
 import AnimationDino from "../../lottie/rex3.json";
-import { useMemo } from "react";
+import { useMemo, useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import WhyUs from "../../img/why_us/whyus3.svg";
 
 export default function WhyUsBox3() {
-  // Lazy load Lottie when in viewport
+  const [isMobile, setIsMobile] = useState(false);
   const { ref, inView } = useInView({ triggerOnce: true });
+
+  // Monitor window width
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    handleResize(); // Set initial state
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   // Memoize Lottie animation data
   const memoizedAnimationData = useMemo(() => AnimationDino, []);
+
   return (
     <div
       ref={ref}
@@ -37,34 +46,38 @@ export default function WhyUsBox3() {
           to ensure you get the perfect design you envision.
         </p>
       </div>
+
       {/* box2 */}
-      {inView && ( // Render Lottie only when in viewport
-        <div
-          className="relative -mt-5 md:-mt-0 hidden md:block"
-          data-aos="fade-left"
-          data-aos-once="true"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-        >
-          <Lottie
-            animationData={memoizedAnimationData}
-            loop={true}
-            autoPlay={true}
-            style={{ width: "100%", height: "100%" }}
-            className="w-full h-full"
-          />
-          <div className="w-[200px] h-[40px] absolute bottom-0 right-0 bg-white"></div>
-        </div>
-      )}
-      <figure
-        data-aos="fade-right"
-        data-aos-once="true"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        className="block md:hidden"
-      >
-        <img src={WhyUs} alt="" />
-      </figure>
+      {inView &&
+        (isMobile ? (
+          // Mobile: Render image
+          <figure
+            data-aos="fade-right"
+            data-aos-once="true"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
+            <img src={WhyUs} alt="Why Us illustration for mobile" />
+          </figure>
+        ) : (
+          // Desktop/Tablet: Render Lottie
+          <div
+            className="relative -mt-5 md:-mt-0"
+            data-aos="fade-left"
+            data-aos-once="true"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
+            <Lottie
+              animationData={memoizedAnimationData}
+              loop={true}
+              autoPlay={true}
+              style={{ width: "100%", height: "100%" }}
+              className="w-full h-full"
+            />
+            <div className="w-[200px] h-[40px] absolute bottom-0 right-0 bg-white"></div>
+          </div>
+        ))}
     </div>
   );
 }

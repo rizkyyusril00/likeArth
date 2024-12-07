@@ -1,12 +1,20 @@
 import Lottie from "lottie-react";
 import AnimationDino from "../../lottie/testimoni.json";
-import { useMemo } from "react";
+import { useMemo, useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import Testimonials from "../../img/testimoni1.svg";
 
 export default function HeaderTestimonials() {
-  // Lazy load Lottie when in viewport
+  const [isMobile, setIsMobile] = useState(false);
   const { ref, inView } = useInView({ triggerOnce: true });
+
+  // Monitor window width
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    handleResize(); // Set initial state
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   // Memoize Lottie animation data
   const memoizedAnimationData = useMemo(() => AnimationDino, []);
@@ -52,36 +60,43 @@ export default function HeaderTestimonials() {
           impact we’ve made for our clients.
         </p>
       </div>
+
       {/* box2 */}
-      {inView && ( // Render Lottie only when in viewport
-        <div
-          className="relative -mt-10 md:-mt-14 lg:-mt-0 hidden md:block"
-          data-aos="fade-left"
-          data-aos-once="true"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-          data-aos-delay="500"
-        >
-          <Lottie
-            animationData={memoizedAnimationData}
-            loop={true}
-            autoPlay={true}
-            style={{ width: "100%", height: "100%" }}
-            className="w-full h-full"
-          />
-          <div className="w-[200px] h-[40px] absolute bottom-0 right-0 bg-white"></div>
-        </div>
-      )}
-      <figure
-        data-aos="fade-left"
-        data-aos-once="true"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        data-aos-delay="500"
-        className="block md:hidden"
-      >
-        <img src={Testimonials} alt="" />
-      </figure>
+      {inView &&
+        (isMobile ? (
+          // Mobile: Render image
+          <figure
+            data-aos="fade-left"
+            data-aos-once="true"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="500"
+          >
+            <img
+              src={Testimonials}
+              alt="Testimonials illustration for mobile"
+            />
+          </figure>
+        ) : (
+          // Desktop/Tablet: Render Lottie
+          <div
+            className="relative -mt-10 md:-mt-14 lg:-mt-0"
+            data-aos="fade-left"
+            data-aos-once="true"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="500"
+          >
+            <Lottie
+              animationData={memoizedAnimationData}
+              loop={true}
+              autoPlay={true}
+              style={{ width: "100%", height: "100%" }}
+              className="w-full h-full"
+            />
+            <div className="w-[200px] h-[40px] absolute bottom-0 right-0 bg-white"></div>
+          </div>
+        ))}
     </div>
   );
 }

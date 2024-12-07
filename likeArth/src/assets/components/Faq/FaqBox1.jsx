@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { useMemo } from "react";
 import Lottie from "lottie-react";
@@ -5,11 +6,20 @@ import AnimationDino from "../../lottie/faq.json";
 import Faq from "../../img/faq/faq.svg";
 
 export default function FaqBox1() {
-  // Lazy load Lottie when in viewport
+  const [isMobile, setIsMobile] = useState(false);
   const { ref, inView } = useInView({ triggerOnce: true });
+
+  // Monitor window width
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    handleResize(); // Set initial state
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   // Memoize Lottie animation data
   const memoizedAnimationData = useMemo(() => AnimationDino, []);
+
   return (
     <div
       className="flex flex-col justify-center items-center xl:justify-start xl:items-start w-full xl:w-[50%] gap-[2.875rem]"
@@ -49,35 +59,39 @@ export default function FaqBox1() {
           Not sure about something? Talk to us directly!
         </p>
       </div>
-      {inView && ( // Render Lottie only when in viewport
-        <div
-          className="relative -mt-10 md:-mt-14 lg:-mt-0 hidden md:block"
-          data-aos="fade-up"
-          data-aos-once="true"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-          data-aos-delay="700"
-        >
-          <Lottie
-            animationData={memoizedAnimationData}
-            loop={true}
-            autoPlay={true}
-            style={{ width: "100%", height: "100%" }}
-            className="w-full h-full"
-          />
-          <div className="w-[200px] h-[40px] absolute bottom-0 right-0 bg-white"></div>
-        </div>
-      )}
-      <figure
-        data-aos="fade-up"
-        data-aos-once="true"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        data-aos-delay="700"
-        className="block md:hidden"
-      >
-        <img src={Faq} alt="" />
-      </figure>
+
+      {inView &&
+        (isMobile ? (
+          // Mobile: Render image
+          <figure
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="700"
+          >
+            <img src={Faq} alt="FAQ illustration for mobile" />
+          </figure>
+        ) : (
+          // Desktop/Tablet: Render Lottie
+          <div
+            className="relative -mt-10 md:-mt-14 lg:-mt-0"
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="700"
+          >
+            <Lottie
+              animationData={memoizedAnimationData}
+              loop={true}
+              autoPlay={true}
+              style={{ width: "100%", height: "100%" }}
+              className="w-full h-full"
+            />
+            <div className="w-[200px] h-[40px] absolute bottom-0 right-0 bg-white"></div>
+          </div>
+        ))}
     </div>
   );
 }
