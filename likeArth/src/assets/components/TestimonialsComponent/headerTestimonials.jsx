@@ -2,6 +2,7 @@ import Lottie from "lottie-react";
 import AnimationDino from "../../lottie/testimoni.json";
 import { useMemo } from "react";
 import { useInView } from "react-intersection-observer";
+import Testimonials from "../../img/testimoni1.svg";
 
 export default function HeaderTestimonials() {
   // Lazy load Lottie when in viewport
@@ -54,7 +55,7 @@ export default function HeaderTestimonials() {
       {/* box2 */}
       {inView && ( // Render Lottie only when in viewport
         <div
-          className="relative -mt-10 md:-mt-14 lg:-mt-0"
+          className="relative -mt-10 md:-mt-14 lg:-mt-0 hidden md:block"
           data-aos="fade-left"
           data-aos-once="true"
           data-aos-duration="1000"
@@ -71,6 +72,16 @@ export default function HeaderTestimonials() {
           <div className="w-[200px] h-[40px] absolute bottom-0 right-0 bg-white"></div>
         </div>
       )}
+      <figure
+        data-aos="fade-left"
+        data-aos-once="true"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-delay="500"
+        className="block md:hidden"
+      >
+        <img src={Testimonials} alt="" />
+      </figure>
     </div>
   );
 }
