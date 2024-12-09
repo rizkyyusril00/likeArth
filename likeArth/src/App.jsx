@@ -10,15 +10,14 @@ import FooterHero from "./assets/components/footerHero";
 import Footer from "./assets/components/footer";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import AOS from "aos";
-import "aos/dist/aos.css"; // Ini untuk mengimport CSS AOS
+import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 function App() {
   useEffect(() => {
     AOS.init({
-      // duration: 1000, // Durasi animasi dalam milidetik
-      easing: "ease-in-out", // Jenis easing animasi
-      once: true, // Menentukan apakah animasi hanya dijalankan sekali
+      easing: "ease-in-out",
+      once: true,
     });
   }, []);
   return (
