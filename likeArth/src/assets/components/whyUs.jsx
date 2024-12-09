@@ -1,7 +1,6 @@
 import Awan1 from "../img/awan1.png";
 import Awan2 from "../img/awan2.png";
 import WhyUsContent from "./WhyUsComponent/whyUsContent";
-
 export default function WhyUs() {
   return (
     <div id="whyus" className="whyus relative px-[24px] w-full overflow-hidden">
