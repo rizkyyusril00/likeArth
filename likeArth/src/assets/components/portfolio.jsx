@@ -1,6 +1,5 @@
 import Marquee from "react-fast-marquee";
 import Ft1 from "../img/icon2/ft1.svg";
-// import FigmaLogo from "../img/figmaLogo.svg";
 import Portfolio1 from "../img/portfolio/portfolio1.png";
 import Portfolio2 from "../img/portfolio/portfolio2.png";
 import Portfolio3 from "../img/portfolio/portfolio3.png";
