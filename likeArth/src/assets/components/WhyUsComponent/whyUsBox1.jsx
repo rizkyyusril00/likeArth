@@ -51,22 +51,14 @@ export default function WhyUsBox1() {
       {inView &&
         (isMobile ? (
           // Mobile: Render image
-          <div
-            className="relative order-2 md:order-1 -mt-10 md:-mt-0"
+          <figure
             data-aos="fade-left"
             data-aos-once="true"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
           >
-            <Lottie
-              animationData={memoizedAnimationData}
-              loop={true}
-              autoPlay={true}
-              style={{ width: "100%", height: "100%" }}
-              className="w-full h-full"
-            />
-            <div className="w-[200px] h-[40px] absolute bottom-0 right-0 bg-white"></div>
-          </div>
+            <img src={WhyUs} alt="Why Us illustration for mobile" />
+          </figure>
         ) : (
           // Desktop/Tablet: Render Lottie
           <div
