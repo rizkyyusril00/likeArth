@@ -65,18 +65,23 @@ export default function HeaderTestimonials() {
       {inView &&
         (isMobile ? (
           // Mobile: Render image
-          <figure
+          <div
+            className="relative -mt-10 md:-mt-14 lg:-mt-0"
             data-aos="fade-left"
             data-aos-once="true"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
             data-aos-delay="500"
           >
-            <img
-              src={Testimonials}
-              alt="Testimonials illustration for mobile"
+            <Lottie
+              animationData={memoizedAnimationData}
+              loop={true}
+              autoPlay={true}
+              style={{ width: "100%", height: "100%" }}
+              className="w-full h-full"
             />
-          </figure>
+            <div className="w-[200px] h-[40px] absolute bottom-0 right-0 bg-white"></div>
+          </div>
         ) : (
           // Desktop/Tablet: Render Lottie
           <div
