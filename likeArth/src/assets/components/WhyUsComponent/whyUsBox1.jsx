@@ -6,7 +6,8 @@ import WhyUs from "../../img/why_us/whyus1.svg";
 
 export default function WhyUsBox1() {
   const [isMobile, setIsMobile] = useState(false);
-  const { ref, inView } = useInView({ triggerOnce: true });
+  const { ref, inView } = useInView({ triggerOnce: true }); // triggerOnce tetap true agar AOS hanya sekali
+  const [hasBeenVisible, setHasBeenVisible] = useState(false);
 
   // Monitor window width
   useEffect(() => {
@@ -15,6 +16,13 @@ export default function WhyUsBox1() {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  // Update visibility state based on intersection observer
+  useEffect(() => {
+    if (inView) {
+      setHasBeenVisible(true); // Tetap true setelah pertama kali terlihat
+    }
+  }, [inView]);
 
   // Memoize Lottie animation data
   const memoizedAnimationData = useMemo(() => AnimationDino, []);
@@ -48,17 +56,25 @@ export default function WhyUsBox1() {
       </div>
 
       {/* box2 */}
-      {inView &&
+      {hasBeenVisible &&
         (isMobile ? (
           // Mobile: Render image
-          <figure
+          <div
+            className="relative order-2 md:order-1 -mt-10 md:-mt-0"
             data-aos="fade-left"
             data-aos-once="true"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
           >
-            <img src={WhyUs} alt="Why Us illustration for mobile" />
-          </figure>
+            <Lottie
+              animationData={memoizedAnimationData}
+              loop={true}
+              autoPlay={true}
+              style={{ width: "100%", height: "100%" }}
+              className="w-full h-full"
+            />
+            <div className="w-[200px] h-[40px] absolute bottom-0 right-0 bg-white"></div>
+          </div>
         ) : (
           // Desktop/Tablet: Render Lottie
           <div
