@@ -3,6 +3,8 @@ import AnimationDino from "../../lottie/rex.json";
 import { useMemo, useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import WhyUs from "../../img/why_us/whyus1.svg";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Ini untuk mengimport CSS AOS
 
 export default function WhyUsBox1() {
   const [isMobile, setIsMobile] = useState(false);
