@@ -34,11 +34,6 @@
   }
 }
 
-/* faq */
-/* .txt-faq{
-    text-align: left !important;
-} */
-
 /* footer hero */
 .footerHero {
   height: 1500px;
@@ -77,48 +72,3 @@
     background-repeat: no-repeat;
   }
 }
-
-/* btn */
-/* button:hover::after {
-    right: auto;
-    left: 0;
-    width: 100%;
-}
-
-button span {
-    text-align: center;
-    text-decoration: none;
-    width: 100%;
-    color: #01717E !important;
-    font-size: 1rem;
-    font-weight: bold;
-    z-index: 20;
-    transition: all 0.3s eabutton:after {
-    content: " ";
-    width: 0%;
-    height: 100%;
-    background: #01717E;
-    position: absolute;
-    transition: all 0.4s ease-in-out;
-    right: 0;
-}se-in-out;
-}
-
-button:hover span {
-    color: white !important;
-    animation: scaleUp 0.3s ease-in-out;
-}
-
-@keyframes scaleUp {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(0.95);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-} */
