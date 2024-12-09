@@ -1,21 +1,8 @@
 import Btn from "./btn";
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { useTypewriter } from "react-simple-typewriter";
 
 export default function Hero() {
-  // type animation
-  const [Poins] = useTypewriter({
-    words: [
-      "Experienced Designer",
-      "Your satisfactions is our priority",
-      "Unlimited design requests & revisions",
-    ],
-    loop: false,
-    typeSpeed: 5,
-    deleteSpeed: 5,
-    delaySpeed: 500,
-  });
   // animation framer
   const delay = 0.9;
   const poins = [
