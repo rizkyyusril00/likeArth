@@ -64,7 +64,11 @@ export default function Nav() {
             ))}
           </ul>
           {/* kontak */}
-          <a href="https://cal.com/likearthstudio/30min" target="_blank">
+          <a
+            href="https://cal.com/likearthstudio/30min"
+            target="_blank"
+            aria-label="book a call"
+          >
             <Btn
               title="Book a Call"
               style="hidden xl:flex justify-center items-center bg-primary hover:bg-[#04525b] transition-all duration-500 ease-in-out border border-primary px-[1.5rem] py-[0.719rem] rounded-[0.75rem] relative overflow-hidden"
