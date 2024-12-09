@@ -74,12 +74,6 @@ export default function FooterHero() {
             </div>
             {/* mobile poins */}
             <PoinsType />
-            {/* <div className="flex justify-center items-center gap-[0.5rem] lg:hidden">
-              <i className="bi bi-check-circle text-primary text-[1rem]"></i>
-              <p className="text-[1rem] text-[#676767] text-center">
-                Your satisfaction is our priority
-              </p>
-            </div> */}
             {/* contact us */}
             <div className="px-7 sm:px-[58px] md:px-[165px] lg:px-[280px] xl:px-[270px] container mx-auto max-w-[1120px] flex items-center justify-center">
               <motion.div
