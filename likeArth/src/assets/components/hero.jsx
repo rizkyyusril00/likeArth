@@ -1,6 +1,7 @@
 import Btn from "./btn";
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import HeroParagraph from "./Hero/HeroParagraph";
 
 export default function Hero() {
   // animation framer
@@ -61,16 +62,7 @@ export default function Hero() {
               ))}
             </motion.h1>
             {/* description */}
-            <motion.p
-              whileInView={{ y: [25, 0], opacity: [0, 1] }}
-              transition={{ delay: 0.8, duration: 1.5, ease: "easeInOut" }}
-              viewport={{ once: true }}
-              className="text-primary text-[1rem] text-center font-normal leading-[28px] xl:leading-[28px]"
-            >
-              If you're looking to achieve your business goals through
-              delightful experiences and engaging design, then you're in the
-              right place.
-            </motion.p>
+            <HeroParagraph />
             {/* poins */}
             <div className="hidden lg:flex items-center justify-center gap-[1.5rem]">
               {poins.map((poin, index) => (
