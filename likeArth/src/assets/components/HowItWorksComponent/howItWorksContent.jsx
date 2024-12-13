@@ -55,7 +55,7 @@ export default function HowItWorksContent() {
             <img
               src={vision.img}
               alt=""
-              className="h-full w-full object-none"
+              className="h-full w-full object-cover"
             />
           </figure>
           <h3

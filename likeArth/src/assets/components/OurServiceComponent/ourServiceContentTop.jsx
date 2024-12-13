@@ -83,8 +83,12 @@ export default function OurServiceContentTop() {
           className="flex justify-start items-center gap-[1.5rem]"
         >
           {/* img */}
-          <figure className="w-[40%] h-auto md:w-[167px] md:h-[120px]">
-            <img src={Service2} alt="" className="w-full h-full object-cover" />
+          <figure className="w-[80%] h-auto md:w-[167px] md:h-[120px]">
+            <img
+              src={Service2}
+              alt=""
+              className="w-full h-full object-cover lg:object-left"
+            />
           </figure>
           {/* description */}
           <div className="flex flex-col items-start justify-start gap-[0.5rem] text-secondary w-[60%] md:w-auto">
