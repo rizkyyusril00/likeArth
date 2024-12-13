@@ -1,5 +1,5 @@
 import Lottie from "lottie-react";
-import AnimationDino from "../../lottie/rexUpdate.json";
+import AnimationDino from "../../lottie/rex.json";
 import { useMemo, useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import WhyUs from "../../img/why_us/whyus1.svg";
