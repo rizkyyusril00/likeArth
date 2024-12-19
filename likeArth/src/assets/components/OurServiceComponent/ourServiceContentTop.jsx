@@ -87,7 +87,7 @@ export default function OurServiceContentTop() {
             <img
               src={Service2}
               alt=""
-              className="w-full h-full object-cover lg:object-left"
+              className="w-full h-full object-center"
             />
           </figure>
           {/* description */}

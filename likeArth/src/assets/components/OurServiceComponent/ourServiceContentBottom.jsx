@@ -76,7 +76,11 @@ export default function OurServiceContentBottom() {
         >
           {/* img */}
           <figure className="w-[40%] h-auto md:w-[167px] md:h-[120px]">
-            <img src={Service4} alt="" className="w-full h-full object-cover" />
+            <img
+              src={Service4}
+              alt=""
+              className="w-full h-full object-center"
+            />
           </figure>
           {/* description */}
           <div className="flex flex-col items-start justify-start gap-[0.5rem] text-secondary w-[60%] md:w-auto">
